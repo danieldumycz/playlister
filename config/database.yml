@@ -81,5 +81,3 @@ test:
 production:
   <<: *default
   database: playlister_production
-  username: playlister
-  password: <%= ENV['PLAYLISTER_DATABASE_PASSWORD'] %>

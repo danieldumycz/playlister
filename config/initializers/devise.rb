@@ -1,6 +1,12 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+
+  #For omniauth provider configuration: provider: name, App_Key, App_Secret
+  config.omniauth :soundcloud, "21097f8dc77f5d34bff0633f46ee5e99", "9a2f08325d439ebd4ceae6c071ca1f10", client_options: { redirect_uri: '/users/auth/soundcloud/callback' }
+
+  config.omniauth :spotify, '01b458f8140945d3a8f9776b4b960853', '678e60d62a214c6397f363046ff7c791', scope: 'playlist-read-private user-read-private user-read-email'
+
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
