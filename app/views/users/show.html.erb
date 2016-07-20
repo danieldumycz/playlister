@@ -11,10 +11,21 @@
 </div>
 
 <dl class="dl-horizontal">
-  <% @user.identities.each do |identity| %>
-  	<p> <%= identity.provider %></p>
-  	<p> <%= identity.uid %></p>
-  	<p> <%= identity.access_token %></p>
-  	<hr>
-	<% end %>
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th>Identities</th>
+		      <th>User ID</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <% @user.identities.each do |identity| %>
+		    <tr>
+		      <th scope="row"><%= identity.provider %></th>
+		      <td><%= identity.uid %></td>
+		      <td><%= identity.access_token %></td>
+		    </tr>
+		    <% end %>
+		  </tbody>
+		</table>
 </dl>

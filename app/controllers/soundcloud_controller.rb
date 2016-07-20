@@ -30,4 +30,14 @@ class SoundcloudController < ApplicationController
 		end
 		redirect_to root_url, notice: "Soundcloud Identity Created"
 	end
+
+	def refresh
+		# create client object with app credentials and refresh token
+		client = Soundcloud.new(:client_id => '21097f8dc77f5d34bff0633f46ee5e99',
+		                        :client_secret => '9a2f08325d439ebd4ceae6c071ca1f10',
+		                        :refresh_token => 'SOME_REFRESH_TOKEN')
+
+		# the client can now be used to make authenticated API calls
+		puts client.get('/me').username
+	end
 end
