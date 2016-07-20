@@ -6,6 +6,9 @@ gem 'devise'
 
 gem 'soundcloud'
 
+#Keep SSL certs up to date
+gem 'certified'
+
 gem 'omniauth'
 
 gem 'omniauth-soundcloud'

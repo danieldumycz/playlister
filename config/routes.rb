@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  #For SoundCloud Connections
+  get '/soundcloud/connect',    :to => 'soundcloud#connect'
+  get 'soundcloud/oauth-callback', to: 'soundcloud#connected'
+  get 'logout', to: 'soundcloud#destroy', as: 'logout'
   # devise_for :users
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
 

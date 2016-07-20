@@ -4889,3 +4889,2863 @@ Completed 200 OK in 118ms (Views: 115.7ms | ActiveRecord: 0.3ms)
   [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
   [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
   [1m[36mIdentity Load (0.7ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."user_id" = $1[0m  [["user_id", 1]]
+
+
+Started GET "/users" for 127.0.0.1 at 2016-07-18 22:48:45 +1000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 154ms (Views: 116.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:48:46 +1000
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2016-07-18 22:48:47 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:48:50 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 140ms (Views: 134.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 121ms (Views: 117.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:23 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:49:24 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:50:24 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 211ms (Views: 202.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:50:24 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:50:24 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:24 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:24 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:24 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:50:24 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:50:25 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:51:34 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 268ms (Views: 260.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:51:34 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:35 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:51:45 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 114ms (Views: 108.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:51:45 +1000
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:51:46 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 133ms (Views: 126.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:14 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:15 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:52:46 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 134ms (Views: 127.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:52:46 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:52:46 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:52:46 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:52:47 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:53:13 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:14 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:53:31 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 182ms (Views: 174.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:32 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:53:54 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (25.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 193ms (Views: 152.3ms | ActiveRecord: 25.5ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:53:54 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:53:55 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:54:41 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 160ms (Views: 129.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:54:42 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:55:06 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (9.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 157ms (Views: 132.4ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:55:07 +1000
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2016-07-18 22:55:11 +1000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (3.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/edit.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 327ms (Views: 286.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2016-07-18 22:55:27 +1000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/edit.html.erb within layouts/application (45.1ms)
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 2.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    35:         </ul>
+    36:         <ul class="nav navbar-nav pull-right">
+    37:             <% if user_signed_in? %>
+    38:               <li><%= link_to current_user.email, user_path, :class => 'navbar-link' %></li>
+    39:               <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
+    40:               <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
+    41:             <% else %>
+  app/views/layouts/application.html.erb:38:in `_app_views_layouts_application_html_erb__3759953826519027468_70290471034480'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.1ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2016-07-18 22:56:20 +1000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (7.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/edit.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 295ms (Views: 276.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:56:21 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:56:21 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:21 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:21 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:56:21 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:21 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:21 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:21 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:21 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:56:22 +1000
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-18 22:56:26 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (3.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 266ms (Views: 250.8ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2016-07-18 22:56:27 +1000
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-18 22:56:35 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 240ms (Views: 228.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:56:38 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 278ms (Views: 260.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:57:15 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (12.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 290ms (Views: 268.2ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:57:17 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:17 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:57:17 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:17 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:17 +1000
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:57:17 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:18 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:57:49 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (6.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 440ms (Views: 399.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:54 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:55 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:55 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:55 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:55 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:55 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:55 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 22:57:55 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:58:00 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (4.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 150ms (Views: 134.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-18 22:58:12 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 160ms (Views: 147.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2016-07-18 22:58:12 +1000
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2016-07-18 22:58:15 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (24.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/_form.html.erb (1.2ms)
+  Rendered users/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 174ms (Views: 143.1ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2016-07-18 22:58:17 +1000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/edit.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 152ms (Views: 145.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2016-07-18 22:58:20 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/_form.html.erb (4.4ms)
+  Rendered users/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 168ms (Views: 148.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-18 22:58:25 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 129ms (Views: 122.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:58:42 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 138ms (Views: 134.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 22:58:44 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 106ms (Views: 104.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 23:14:21 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (7.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (11.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1856ms (Views: 1641.3ms | ActiveRecord: 37.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-18 23:14:29 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 169ms (Views: 138.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 23:14:32 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 200ms (Views: 194.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 23:17:23 +1000
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-18 23:17:24 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (80.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (136.1ms)
+Completed 200 OK in 301ms (Views: 296.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-19 11:22:03 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (9.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 39ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-19 11:22:04 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (69.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (166.8ms)
+Completed 200 OK in 1401ms (Views: 1321.6ms | ActiveRecord: 19.1ms)
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-07-19 11:22:11 +1000
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-07-19 11:22:12 +1000
+
+
+Started GET "/users/auth/spotify/callback?code=AQDVpb9A2sXttCGKVqmrOb5GNt0VHUGLwBKDgWhB_OwYdCrmqeoedTTHeAfSlKi4fJLpGADACQUoU3zWwFTA7a9hXDWxI_MUaVo78SOYams1w-M4o1vp7CXLrL2d3_dMSp0-lOXxdJMKc4R4XfrbjwiQ9k2JRDZdCtR6UIxT8YQqMJl_16mR0roN2mrBJeRk6Su4Ded-8MasOx-we1wrq0Hd3wISFCM3bRMhVOOaBmX739_BWdLYAvS-13hKbBUCH202pzynTXsWUxP8fbZ9EbdtONMHx2SSFV2aMM1lic7izw&state=7d69069caf696ad9be5ee18c94236a50199e54d18e73c762" for 127.0.0.1 at 2016-07-19 11:22:22 +1000
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQDVpb9A2sXttCGKVqmrOb5GNt0VHUGLwBKDgWhB_OwYdCrmqeoedTTHeAfSlKi4fJLpGADACQUoU3zWwFTA7a9hXDWxI_MUaVo78SOYams1w-M4o1vp7CXLrL2d3_dMSp0-lOXxdJMKc4R4XfrbjwiQ9k2JRDZdCtR6UIxT8YQqMJl_16mR0roN2mrBJeRk6Su4Ded-8MasOx-we1wrq0Hd3wISFCM3bRMhVOOaBmX739_BWdLYAvS-13hKbBUCH202pzynTXsWUxP8fbZ9EbdtONMHx2SSFV2aMM1lic7izw", "state"=>"7d69069caf696ad9be5ee18c94236a50199e54d18e73c762"}
+  [1m[35mIdentity Load (3.8ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[36mUser Load (3.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2016-07-19 01:22:26.027111"], ["sign_in_count", 2], ["updated_at", "2016-07-19 01:22:26.028921"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1/finish_signup
+Completed 302 Found in 116ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/users/1/finish_signup" for 127.0.0.1 at 2016-07-19 11:22:26 +1000
+Processing by UsersController#finish_signup as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/finish_signup.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 148ms (Views: 140.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-19 11:22:40 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (4.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 186ms (Views: 175.8ms | ActiveRecord: 4.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-07-19 11:22:57 +1000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"F2zeMrDxsKdswQ+E7pzBvk4oUkZzIuioQooAYUur7rgu8ac9UG5FC6hK/Qz8nwZbrA5rOSkMEzDWwPT6Yc52nQ=="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (1.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-19 11:22:57 +1000
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-19 11:22:57 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (53.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (79.8ms)
+Completed 200 OK in 315ms (Views: 309.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/soundcloud" for 127.0.0.1 at 2016-07-19 11:23:02 +1000
+
+
+Started GET "/users/auth/soundcloud" for 127.0.0.1 at 2016-07-19 11:47:11 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAccessTokenToIdentities (20160720000746)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (13.5ms)[0m  [1mALTER TABLE "identities" ADD "access_token" character varying[0m
+  [1m[35m (32.0ms)[0m  CREATE  INDEX  "index_identities_on_access_token" ON "identities"  ("access_token")
+  [1m[36mSQL (16.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160720000746"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'identities'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-20 10:17:43 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (25.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (55.7ms)
+Completed 200 OK in 895ms (Views: 840.1ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/soundcloud.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:45 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-20 10:17:46 +1000
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 10:17:49 +1000
+Processing by SoundcloudController#connect as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-20 10:17:49 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (28.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (92.8ms)
+Completed 200 OK in 188ms (Views: 184.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-07-20 10:53:33 +1000
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-07-20 10:53:34 +1000
+
+
+Started GET "/users/auth/spotify/callback?code=AQBnLVavEnJALZHts8d1GQWgbRSZWexb8OX4qfqyqlryvzlus-3guX7fADWNtbxBnzhE1r65ilcZsNl2Smxna1dVn6AHhqbNlGz5tsGhdUFnUg3rb1T85DGUSsma_oywN7EKaucpl77hbgjwp7NM1u2cXSS4Iv_wQkyX_Nh1R4K2M2TqJnLlHna-c5GZjpWMGQgC_Du-HW29A9qPYlWEd4oKQbT5FHeaYvPyD9KF0i4QpnYS9yiEPpC4KT3Nuqq542zEFOzz-dCuXZSvjKJx4Hy8N6MYsZZXEbAd4xRlpRJJ-A&state=fdceaa4fb95f98061e3dbd5169e24ebcfedb4ce0e260663b" for 127.0.0.1 at 2016-07-20 10:53:35 +1000
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQBnLVavEnJALZHts8d1GQWgbRSZWexb8OX4qfqyqlryvzlus-3guX7fADWNtbxBnzhE1r65ilcZsNl2Smxna1dVn6AHhqbNlGz5tsGhdUFnUg3rb1T85DGUSsma_oywN7EKaucpl77hbgjwp7NM1u2cXSS4Iv_wQkyX_Nh1R4K2M2TqJnLlHna-c5GZjpWMGQgC_Du-HW29A9qPYlWEd4oKQbT5FHeaYvPyD9KF0i4QpnYS9yiEPpC4KT3Nuqq542zEFOzz-dCuXZSvjKJx4Hy8N6MYsZZXEbAd4xRlpRJJ-A", "state"=>"fdceaa4fb95f98061e3dbd5169e24ebcfedb4ce0e260663b"}
+  [1m[35mIdentity Load (10.3ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[36mIdentity Load (2.2ms)[0m  [1mSELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1[0m  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2016-07-19 01:22:26.027111"], ["current_sign_in_at", "2016-07-20 00:53:38.678525"], ["sign_in_count", 3], ["updated_at", "2016-07-20 00:53:38.682706"], ["id", 1]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1/finish_signup
+Completed 302 Found in 151ms (ActiveRecord: 41.6ms)
+
+
+Started GET "/users/1/finish_signup" for 127.0.0.1 at 2016-07-20 10:53:38 +1000
+Processing by UsersController#finish_signup as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/finish_signup.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 172ms (Views: 159.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/soundcloud.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-20 10:53:39 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 10:53:43 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 147ms (Views: 136.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 10:53:46 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 10:53:46 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=f2326baf1d133b0e2df747e446f8b106" for 127.0.0.1 at 2016-07-20 10:53:59 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"f2326baf1d133b0e2df747e446f8b106"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (0.6ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1  [["uid", "162930727"]]
+Completed 500 Internal Server Error in 1711ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `create_from_soundcloud' for #<Class:0x007ff6215be220>):
+  app/controllers/soundcloud_controller.rb:24:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.4ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 10:55:04 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 24ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 10:55:05 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=59a140a96bf36b324d5ba9cf30dbfc38" for 127.0.0.1 at 2016-07-20 10:55:10 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"59a140a96bf36b324d5ba9cf30dbfc38"}
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (0.6ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1  [["uid", "162930727"]]
+Completed 500 Internal Server Error in 2893ms (ActiveRecord: 2.5ms)
+
+NameError (undefined local variable or method `soundcloud_user' for #<Class:0x007ff61003adc8>):
+  app/models/identity.rb:12:in `block in create_from_soundcloud'
+  app/models/identity.rb:11:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:24:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 12:23:46 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 2031ms (Views: 1879.2ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 12:23:48 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 219ms (Views: 206.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:23:52 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 104ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:23:53 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=952fbd7fce4a1587ca5ddb978b279545" for 127.0.0.1 at 2016-07-20 12:23:58 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"952fbd7fce4a1587ca5ddb978b279545"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (2.8ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+Completed 500 Internal Server Error in 1562ms (ActiveRecord: 5.1ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 2)):
+  app/models/identity.rb:10:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:26:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.1ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=0b281711bbed4e41d7364ea9075cbe55" for 127.0.0.1 at 2016-07-20 12:34:36 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"0b281711bbed4e41d7364ea9075cbe55"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (0.7ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+Completed 500 Internal Server Error in 3635ms (ActiveRecord: 10.5ms)
+
+NameError (undefined local variable or method `params' for #<Class:0x007f5b2a6e45b0>):
+  app/models/identity.rb:12:in `block in create_from_soundcloud'
+  app/models/identity.rb:11:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:26:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (6.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (4.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (72.8ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=825cbe8c7c7c9825cd6b5b9f54684610" for 127.0.0.1 at 2016-07-20 12:35:11 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"825cbe8c7c7c9825cd6b5b9f54684610"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (0.4ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+Completed 500 Internal Server Error in 3242ms (ActiveRecord: 8.4ms)
+
+NameError (undefined local variable or method `current_user' for #<Class:0x007f5b253ab560>
+Did you mean?  current_scope):
+  app/models/identity.rb:12:in `block in create_from_soundcloud'
+  app/models/identity.rb:11:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:26:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.0ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=8fa1a7722feb2d601d51ca2a086bc7e2" for 127.0.0.1 at 2016-07-20 12:37:42 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"8fa1a7722feb2d601d51ca2a086bc7e2"}
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (0.8ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mIdentity Exists (5.7ms)[0m  [1mSELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Completed 422 Unprocessable Entity in 2896ms (ActiveRecord: 9.7ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Uid can't be blank):
+  app/models/identity.rb:11:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:26:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (63.4ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=8fa1a7722feb2d601d51ca2a086bc7e2" for 127.0.0.1 at 2016-07-20 12:39:05 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"8fa1a7722feb2d601d51ca2a086bc7e2"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1653ms (ActiveRecord: 0.7ms)
+
+SoundCloud::ResponseError (HTTP status: 401 Unauthorized Error: invalid_grant):
+  app/controllers/soundcloud_controller.rb:21:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (101.7ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=73cec47dd51f72999a98455be7ffb2ff" for 127.0.0.1 at 2016-07-20 12:39:13 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"73cec47dd51f72999a98455be7ffb2ff"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (0.8ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+  [1m[35m (6.8ms)[0m  BEGIN
+  [1m[36mIdentity Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Completed 422 Unprocessable Entity in 2686ms (ActiveRecord: 54.3ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Uid can't be blank):
+  app/models/identity.rb:11:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:26:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (61.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 12:39:16 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 236ms (Views: 230.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/soundcloud.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-20 12:39:17 +1000
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:39:21 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 15ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:39:22 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=79b8172b67a13789eca44dd88a17af6a" for 127.0.0.1 at 2016-07-20 12:39:27 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"79b8172b67a13789eca44dd88a17af6a"}
+  [1m[35mUser Load (4.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (0.7ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mIdentity Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+Completed 422 Unprocessable Entity in 2737ms (ActiveRecord: 7.0ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Uid can't be blank):
+  app/models/identity.rb:11:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:26:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (69.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 12:42:50 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 148ms (Views: 101.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 12:42:50 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 90ms (Views: 85.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:42:54 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 12ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:42:56 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=1bd1419ec736c747a6d6f5e7a7ff6339" for 127.0.0.1 at 2016-07-20 12:43:00 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"1bd1419ec736c747a6d6f5e7a7ff6339"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (0.7ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1  [["uid", "162930727"]]
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (1.1ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3376ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 12:43:03 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 144ms (Views: 126.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-20 12:44:49 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 221ms (Views: 161.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-20 12:45:07 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (1.0ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (69.5ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 2.6ms)
+
+ActionView::Template::Error (undefined method `provider' for #<Identity::ActiveRecord_Associations_CollectionProxy:0x007f5b272e2370>):
+    11: </div>
+    12: 
+    13: <dl class="dl-horizontal">
+    14: 	<%= @user.identities.provider %>
+    15: </dl>
+  app/views/users/show.html.erb:14:in `_app_views_users_show_html_erb__23619479762670160_70014738629200'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-20 12:46:24 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (0.5ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."user_id" = $1  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 177ms (Views: 156.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/soundcloud.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-20 12:46:25 +1000
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2016-07-20 12:46:26 +1000
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mIdentity Load (0.6ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."user_id" = $1  [["user_id", 1]]
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 12:48:29 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 151ms (Views: 97.8ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:48:31 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:48:32 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (6.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 15ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=009357e987643c9ddfab8f402c326e72" for 127.0.0.1 at 2016-07-20 12:48:38 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"009357e987643c9ddfab8f402c326e72"}
+  [1m[35mUser Load (3.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (24.6ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mIdentity Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (0.4ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 422 Unprocessable Entity in 2875ms (ActiveRecord: 30.1ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Uid can't be blank):
+  app/models/identity.rb:12:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:26:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (70.1ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:56:05 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 52ms (ActiveRecord: 15.1ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 12:56:07 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 19ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=d417ae4693ef7976287ad748fe55340e" for 127.0.0.1 at 2016-07-20 12:56:13 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"d417ae4693ef7976287ad748fe55340e"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (1.1ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+  [1m[35m (4.4ms)[0m  BEGIN
+  [1m[36mIdentity Exists (3.1ms)[0m  [1mSELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (1.2ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4279ms (ActiveRecord: 29.8ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Uid can't be blank):
+  app/models/identity.rb:12:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:28:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (86.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 13:04:57 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (8.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1515ms (Views: 1314.0ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 13:04:58 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 135ms (Views: 124.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:05:03 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (5.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 13ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:05:04 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=56ace7608814364df2a2fa8875ed6428" for 127.0.0.1 at 2016-07-20 13:05:10 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"56ace7608814364df2a2fa8875ed6428"}
+  [1m[35mUser Load (11.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (6.8ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mIdentity Exists (1.2ms)[0m  [1mSELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (0.7ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3703ms (ActiveRecord: 76.7ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Uid can't be blank):
+  app/models/identity.rb:13:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:28:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.0ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=843909430c59581c11677c7fdd5b5ad0" for 127.0.0.1 at 2016-07-20 13:07:24 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"843909430c59581c11677c7fdd5b5ad0"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 3541ms (ActiveRecord: 48.6ms)
+
+NoMethodError (undefined method `outs' for #<SoundcloudController:0x007fed162e34d8>):
+  app/controllers/soundcloud_controller.rb:27:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.4ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=843909430c59581c11677c7fdd5b5ad0" for 127.0.0.1 at 2016-07-20 13:07:42 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"843909430c59581c11677c7fdd5b5ad0"}
+  [1m[36mUser Load (12.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1870ms (ActiveRecord: 12.6ms)
+
+SoundCloud::ResponseError (HTTP status: 401 Unauthorized Error: invalid_grant):
+  app/controllers/soundcloud_controller.rb:21:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 13:07:47 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 149ms (Views: 142.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:07:50 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:07:52 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 7ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=5627f4664594b42a642573d9c966cd3b" for 127.0.0.1 at 2016-07-20 13:07:57 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"5627f4664594b42a642573d9c966cd3b"}
+  [1m[36mUser Load (4.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 3544ms (ActiveRecord: 4.7ms)
+
+NoMethodError (undefined method `outs' for #<SoundcloudController:0x007fed0db5f070>):
+  app/controllers/soundcloud_controller.rb:27:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 13:09:30 +1000
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 25ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-20 13:09:30 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (75.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (132.5ms)
+Completed 200 OK in 418ms (Views: 370.6ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-07-20 13:09:35 +1000
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-07-20 13:09:36 +1000
+
+
+Started GET "/users/auth/spotify/callback?code=AQD52KDQ1kCh6qtmfUflxt0himL0agHuHl6HBc6E-CSlCOOKLbLtW2WLgirKvgTou0K_yZMsPCd-B-zr-5wfvunXnx1hO4ZeI75HgSbjLpeeEVftSOb_iI5ZzuBJNu_2pTxyORpblbawRlX2fqPhJ1nNkKV1PSYCTM-FrqWdkYncZUU0EmZDYUXQHYQ-2fUAAfvtEYkeFdjj6LWg7Md29SyEvf2zJA1g6vbFjX3HtY54QQRwS36sOPMDqp1HEFrq9UzPv34UwytAuvmKSWwiOhn8DVSC9duwocaA9NyAhaWh0w&state=eb80efeab2f1a3dff1f7b5ea52a5d0333765df58c4db458f" for 127.0.0.1 at 2016-07-20 13:09:46 +1000
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQD52KDQ1kCh6qtmfUflxt0himL0agHuHl6HBc6E-CSlCOOKLbLtW2WLgirKvgTou0K_yZMsPCd-B-zr-5wfvunXnx1hO4ZeI75HgSbjLpeeEVftSOb_iI5ZzuBJNu_2pTxyORpblbawRlX2fqPhJ1nNkKV1PSYCTM-FrqWdkYncZUU0EmZDYUXQHYQ-2fUAAfvtEYkeFdjj6LWg7Md29SyEvf2zJA1g6vbFjX3HtY54QQRwS36sOPMDqp1HEFrq9UzPv34UwytAuvmKSWwiOhn8DVSC9duwocaA9NyAhaWh0w", "state"=>"eb80efeab2f1a3dff1f7b5ea52a5d0333765df58c4db458f"}
+  [1m[35mIdentity Load (0.7ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2016-07-20 00:53:38.678525"], ["current_sign_in_at", "2016-07-20 03:09:49.692988"], ["sign_in_count", 4], ["updated_at", "2016-07-20 03:09:49.696308"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1/finish_signup
+Completed 302 Found in 80ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/users/1/finish_signup" for 127.0.0.1 at 2016-07-20 13:09:49 +1000
+Processing by UsersController#finish_signup as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/finish_signup.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 102ms (Views: 96.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 13:09:53 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 179ms (Views: 166.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:09:55 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:09:57 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 13ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=ae733eb30ea6b8df2664ed27091e1373" for 127.0.0.1 at 2016-07-20 13:10:07 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"ae733eb30ea6b8df2664ed27091e1373"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (0.5ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1[0m  [["uid", "162930727"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mIdentity Exists (7.5ms)[0m  [1mSELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  ROLLBACK
+  [1m[36m (1.2ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (2.0ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1
+  [1m[36m (1.1ms)[0m  [1mROLLBACK[0m
+Completed 422 Unprocessable Entity in 2967ms (ActiveRecord: 14.2ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Uid can't be blank):
+  app/models/identity.rb:13:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:29:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 13:12:36 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 104ms (Views: 76.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:12:38 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:12:40 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=b950e2081247564380a39ba1d6f23a19" for 127.0.0.1 at 2016-07-20 13:12:44 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"b950e2081247564380a39ba1d6f23a19"}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (0.4ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1  [["uid", "162930727"]]
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (0.9ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mIdentity Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Completed 422 Unprocessable Entity in 2803ms (ActiveRecord: 8.4ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Uid can't be blank):
+  app/models/identity.rb:15:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:29:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.8ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:13:27 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 26ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:13:28 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 10ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=769639f561f6145d25db1a8d4ba84aa0" for 127.0.0.1 at 2016-07-20 13:13:41 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"769639f561f6145d25db1a8d4ba84aa0"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (0.4ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1  [["uid", "162930727"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (0.7ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mIdentity Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "identities" WHERE ("identities"."uid" IS NULL AND "identities"."provider" = 'soundcloud') LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Completed 422 Unprocessable Entity in 2928ms (ActiveRecord: 7.6ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Uid can't be blank):
+  app/models/identity.rb:17:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:29:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (63.7ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:21:17 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 30ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:21:18 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (4.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 20ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=5413ffc836fefb9cbfb2121fdbd4daf7" for 127.0.0.1 at 2016-07-20 13:21:23 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"5413ffc836fefb9cbfb2121fdbd4daf7"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (0.4ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1  [["uid", "162930727"]]
+Completed 500 Internal Server Error in 1015ms (ActiveRecord: 1.7ms)
+
+NameError (undefined local variable or method `resource' for #<Class:0x007fed16621348>):
+  app/models/identity.rb:13:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:29:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (86.9ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:21:57 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 22ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:21:58 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 14ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=cb5927e1d1f5e750b458d0f2fe808d13" for 127.0.0.1 at 2016-07-20 13:22:03 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"cb5927e1d1f5e750b458d0f2fe808d13"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (2.1ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1  [["uid", "162930727"]]
+Completed 500 Internal Server Error in 2004ms (ActiveRecord: 2.7ms)
+
+NameError (undefined local variable or method `id' for #<Class:0x007fed0d3b7c00>
+Did you mean?  ids):
+  app/models/identity.rb:16:in `create_from_soundcloud'
+  app/controllers/soundcloud_controller.rb:29:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (62.1ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:22:50 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 24ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2016-07-20 13:22:52 +1000
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=21097f8dc77f5d34bff0633f46ee5e99&redirect_uri=http://localhost:3000/soundcloud/oauth-callback&display=popup&scope=non-expiring
+Completed 302 Found in 9ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/soundcloud/oauth-callback?code=379daef429d42d3bb5a0f8879b63592b" for 127.0.0.1 at 2016-07-20 13:22:55 +1000
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"379daef429d42d3bb5a0f8879b63592b"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (0.6ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."uid" = $1  [["uid", "162930727"]]
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (1.2ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" = '162930727' AND "identities"."provider" = 'soundcloud') LIMIT 1
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "identities" ("user_id", "uid", "provider", "access_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 1], ["uid", "162930727"], ["provider", "soundcloud"], ["access_token", "#<SoundCloud::HashResponseWrapper access_token=\"1-253693-162930727-277ecdd18ce7a\" scope=\"non-expiring\">"], ["created_at", "2016-07-20 03:22:57.849198"], ["updated_at", "2016-07-20 03:22:57.849198"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (1.1ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" = '162930727' AND "identities"."id" != 2 AND "identities"."provider" = 'soundcloud') LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1999ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 13:22:57 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 111ms (Views: 106.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-20 13:23:02 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (1.3ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 142ms (Views: 126.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-20 13:23:36 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (2.9ms)[0m  SELECT "identities".* FROM "identities" WHERE "identities"."user_id" = $1  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 184ms (Views: 157.2ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:37 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/soundcloud.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2016-07-20 13:23:38 +1000
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 13:23:49 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 147ms (Views: 134.3ms | ActiveRecord: 2.1ms)

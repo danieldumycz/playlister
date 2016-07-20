@@ -11,4 +11,10 @@
 </div>
 
 <dl class="dl-horizontal">
+  <% @user.identities.each do |identity| %>
+  	<p> <%= identity.provider %></p>
+  	<p> <%= identity.uid %></p>
+  	<p> <%= identity.access_token %></p>
+  	<hr>
+	<% end %>
 </dl>
