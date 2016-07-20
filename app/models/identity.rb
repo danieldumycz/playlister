@@ -9,10 +9,6 @@ class Identity < ActiveRecord::Base
 
   def self.create_from_soundcloud(user_id, uid, access_token)
   	#TODO add error handling for soundcloud user with or without a UID field
-  	puts "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
-  	puts user_id
-  	puts uid
-
   	identity = Identity.create(user_id: user_id.id, uid: uid, access_token: access_token, provider: "soundcloud")
   	identity.save!
   end

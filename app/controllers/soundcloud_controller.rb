@@ -22,9 +22,6 @@ class SoundcloudController < ApplicationController
 		client = Soundcloud.new(:access_token => access_token["access_token"])
 		# make an authenticated call
 		soundcloud_user = client.get('/me')
-		puts '#####################'
-		puts soundcloud_user
-		puts soundcloud_user["id"]
 		unless Identity.where(:uid => soundcloud_user["id"]).present?
 		  Identity.create_from_soundcloud(current_user, soundcloud_user["id"], access_token)
 		end
