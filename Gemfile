@@ -6,6 +6,10 @@ gem 'devise'
 
 gem 'soundcloud'
 
+gem 'httparty'
+
+gem 'react-rails'
+
 #Keep SSL certs up to date
 gem 'certified'
 
