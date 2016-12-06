@@ -4,7 +4,7 @@ class SpotifyTracks extends React.Component {
     	<div>
 		    <ul>
 		    	{this.props.tracks.map(track =>
-						<SpotifyTrack track={track} key={track.id} />
+						<SpotifyTrack track={track.track} key={track.id} />
 					)}
 		    </ul>	
 	    </div>
