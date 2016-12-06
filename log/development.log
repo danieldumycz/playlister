@@ -46484,3 +46484,2446 @@ Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b
 
 
 Started GET "/assets/loading-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" for 127.0.0.1 at 2016-12-07 00:39:58 +1100
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-07 01:08:00 +1100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r5nbs/B+P6SKeCGyacz/KU9IWljGWebatwyDtPyVhH0YnzxWrSpWpJQOlubZEKD3O7Cmhm39X5iQRTJVLxq2Hw=="}
+  [1m[35mUser Load (6.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 59ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:08:01 +1100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:08:01 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (37.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (59.3ms)
+Completed 200 OK in 432ms (Views: 428.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (47.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (63.9ms)
+Completed 200 OK in 303ms (Views: 302.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:18 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:19 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:20 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:20 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:20 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:20 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:20 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:20 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:20 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:20 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:12:20 +1100
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-12-07 01:12:24 +1100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (37.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (64.7ms)
+Completed 200 OK in 274ms (Views: 270.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:13:21 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (31.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 299ms (Views: 290.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:22 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:13:23 +1100
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2016-12-07 01:13:31 +1100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (29.8ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (48.3ms)
+Completed 200 OK in 236ms (Views: 232.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:17:20 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (24.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 396ms (Views: 328.3ms | ActiveRecord: 33.4ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:21 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:22 +1100
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:17:36 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (22.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 465ms (Views: 429.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:37 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:17:38 +1100
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-12-07 01:17:46 +1100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (26.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 216ms (Views: 214.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:17:50 +1100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:17:50 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (23.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 206ms (Views: 203.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:17:54 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:17:56 +1100
+
+
+Started GET "/users/auth/spotify/callback?code=AQBswxBTafwzBke_kw-dlz-yoYTXdL3SxerpuCLqgcCGdTpN5BneX1up9-mgBjWE8zmIqReCBQeuSKvz3ctUjc0FHdJDOMIfcqs8vRPgeg2oiyLS7U32HBbvZXXLPWcxYdjCY2Ap8Xjs1ALTYbCV0HI8Zpi6AZiEK4Oy6_0U_3D51LFhR6yC1TUj7WMFOkKhohKzzgKBSeYKDFWCwwxih_wOnhr5wynSN7slJJJoyBQdqew-Y_Hb7tRnO1yiWNqsLayAxVhZyFNWWCBCP1306fkHrbL4eMRHkkotO4jfQz079w&state=fe86d30828f4147b57e00aee34f0c534aa7455f5cc861188" for 127.0.0.1 at 2016-12-07 01:17:57 +1100
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQBswxBTafwzBke_kw-dlz-yoYTXdL3SxerpuCLqgcCGdTpN5BneX1up9-mgBjWE8zmIqReCBQeuSKvz3ctUjc0FHdJDOMIfcqs8vRPgeg2oiyLS7U32HBbvZXXLPWcxYdjCY2Ap8Xjs1ALTYbCV0HI8Zpi6AZiEK4Oy6_0U_3D51LFhR6yC1TUj7WMFOkKhohKzzgKBSeYKDFWCwwxih_wOnhr5wynSN7slJJJoyBQdqew-Y_Hb7tRnO1yiWNqsLayAxVhZyFNWWCBCP1306fkHrbL4eMRHkkotO4jfQz079w", "state"=>"fe86d30828f4147b57e00aee34f0c534aa7455f5cc861188"}
+  [1m[36mIdentity Load (0.8ms)[0m  [1mSELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1[0m  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2016-12-06 02:33:28.129435"], ["current_sign_in_at", "2016-12-06 14:18:00.788203"], ["sign_in_count", 13], ["updated_at", "2016-12-06 14:18:00.803772"], ["id", 1]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1/finish_signup
+Completed 302 Found in 96ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/users/1/finish_signup" for 127.0.0.1 at 2016-12-07 01:18:00 +1100
+Processing by UsersController#finish_signup as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/finish_signup.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 283ms (Views: 261.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:01 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:18:02 +1100
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-07 01:20:11 +1100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WFCW1lVqxzm+M8JIK8Hnnfy2hQFxSmQ+6aN1YfKTQdgGMZKai94Lr9q+pJVukLyV/O9EgN8Ag017meuTV2eaaA=="}
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 53ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:20:12 +1100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:20:12 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (26.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 425ms (Views: 422.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/soundcloud" for 127.0.0.1 at 2016-12-07 01:20:18 +1100
+
+
+Started GET "/users/auth/soundcloud" for 127.0.0.1 at 2016-12-07 01:20:19 +1100
+
+
+Started GET "/soundcloud/oauth-callback?error=redirect_uri_mismatch&error_description=The+redirection+URI+provided+does+not+match+a+pre-registered+value.&state=e9c74b7cb8b325f448b76262dbc8f11f96ab9bf50cde7153" for 127.0.0.1 at 2016-12-07 01:20:20 +1100
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"error"=>"redirect_uri_mismatch", "error_description"=>"The redirection URI provided does not match a pre-registered value.", "state"=>"e9c74b7cb8b325f448b76262dbc8f11f96ab9bf50cde7153"}
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:20:20 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (32.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 329ms (Views: 324.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:21 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:22 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:20:24 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:20:25 +1100
+
+
+Started GET "/users/auth/spotify/callback?code=AQCVe4LJiBj_EqQrh32UaQhSPfvbTLJ0GFIE1QGKbq35N1_c6hzZIkaeCaj9QMwRRZeXPAINjF6DL773uoyU1HXz12oBlfFP70Us_8wI2ONbbk0gmXmyiuO_oQ7kbQUu2BpIQmahTtPv9OPJBP02gy9WoCLHeNPTJwqYZHQ02eXCJPmrlf02uiiRUIBTESRp6a-t9dbWSh85sDblrGkAdQkklvgAgQVt9_hrS0snC1JWPIyiRxXYux_YddUIw0gNNlG3yIFduEpGSoMDEORyVB5OAodXNo0c62skJSy_rrzKrA&state=f531b84b576491262e74d5ae848547b30d2b0534eb658f98" for 127.0.0.1 at 2016-12-07 01:20:27 +1100
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQCVe4LJiBj_EqQrh32UaQhSPfvbTLJ0GFIE1QGKbq35N1_c6hzZIkaeCaj9QMwRRZeXPAINjF6DL773uoyU1HXz12oBlfFP70Us_8wI2ONbbk0gmXmyiuO_oQ7kbQUu2BpIQmahTtPv9OPJBP02gy9WoCLHeNPTJwqYZHQ02eXCJPmrlf02uiiRUIBTESRp6a-t9dbWSh85sDblrGkAdQkklvgAgQVt9_hrS0snC1JWPIyiRxXYux_YddUIw0gNNlG3yIFduEpGSoMDEORyVB5OAodXNo0c62skJSy_rrzKrA", "state"=>"f531b84b576491262e74d5ae848547b30d2b0534eb658f98"}
+  [1m[36mIdentity Load (25.8ms)[0m  [1mSELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1[0m  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2016-12-06 14:18:00.788203"], ["current_sign_in_at", "2016-12-06 14:20:30.420504"], ["sign_in_count", 14], ["updated_at", "2016-12-06 14:20:30.423487"], ["id", 1]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/soundcloud/oauth-callback?error=redirect_uri_mismatch&error_description=The+redirection+URI+provided+does+not+match+a+pre-registered+value.&state=e9c74b7cb8b325f448b76262dbc8f11f96ab9bf50cde7153
+Completed 302 Found in 74ms (ActiveRecord: 36.1ms)
+
+
+Started GET "/soundcloud/oauth-callback?error=redirect_uri_mismatch&error_description=The+redirection+URI+provided+does+not+match+a+pre-registered+value.&state=e9c74b7cb8b325f448b76262dbc8f11f96ab9bf50cde7153" for 127.0.0.1 at 2016-12-07 01:20:30 +1100
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"error"=>"redirect_uri_mismatch", "error_description"=>"The redirection URI provided does not match a pre-registered value.", "state"=>"e9c74b7cb8b325f448b76262dbc8f11f96ab9bf50cde7153"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `merge!' for nil:NilClass):
+  app/controllers/soundcloud_controller.rb:21:in `connected'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (92.1ms)
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:20:48 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:20:48 +1100
+
+
+Started GET "/users/auth/spotify/callback?code=AQCKzCrZ1MhpFrZSAezBxYersYo5QvaeH_up-tZS_uPfa9xffYhOAkwpOEZEcVi77MPpIcndLqnq5tZdI6xIu2tWQTY4lMKrlBF19c0iChM4J7Aif6EW1P53_lJY3ynHqMavwH5juiHA3tNg9I239kcDVKAd4Q-PCmCnwW8gJXCWpWH9t9SOb1Lo50Id-_cc_WOS2ttGo-kAvYKiJP657KdsQz4D-5ccnYBIcHKvT93SxlY1dl2-X2fm-85_qwkKGdezGLsQi2hkLVdrHBWxzKBUIk78UEpsvykoM5HMfvu-qg&state=bc16ad685345ea2d3591e35665ffe8660d1e3e0c263c703b" for 127.0.0.1 at 2016-12-07 01:20:49 +1100
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQCKzCrZ1MhpFrZSAezBxYersYo5QvaeH_up-tZS_uPfa9xffYhOAkwpOEZEcVi77MPpIcndLqnq5tZdI6xIu2tWQTY4lMKrlBF19c0iChM4J7Aif6EW1P53_lJY3ynHqMavwH5juiHA3tNg9I239kcDVKAd4Q-PCmCnwW8gJXCWpWH9t9SOb1Lo50Id-_cc_WOS2ttGo-kAvYKiJP657KdsQz4D-5ccnYBIcHKvT93SxlY1dl2-X2fm-85_qwkKGdezGLsQi2hkLVdrHBWxzKBUIk78UEpsvykoM5HMfvu-qg", "state"=>"bc16ad685345ea2d3591e35665ffe8660d1e3e0c263c703b"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (1.4ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/users/1/finish_signup
+Completed 302 Found in 75ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/users/1/finish_signup" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+Processing by UsersController#finish_signup as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/finish_signup.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 262ms (Views: 245.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:53 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:20:54 +1100
+
+
+Started GET "/users/1/finish_signup" for 127.0.0.1 at 2016-12-07 01:21:04 +1100
+Processing by UsersController#finish_signup as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/finish_signup.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 345ms (Views: 285.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:05 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:06 +1100
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-07 01:21:09 +1100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vt6eC7VPYdq0fTKWDCs05Jy/9T3T7Imde6vx724mkRq3bgHGisDA+f5vw8doc+XP+tCsvp8/ONVoOV+dgT/Lkw=="}
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:21:09 +1100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:21:09 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (19.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 326ms (Views: 322.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:21:13 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:21:13 +1100
+
+
+Started GET "/users/auth/spotify/callback?code=AQAEYDgvoT685axRvp1yOVox7F82HmW8QtyJM8s4LAU4JSXFdl0Im1TBhohmVwg6M3zZppD4emJfvSi7Fx1Qh3GYfHiIYcjRtyjDC_qyONdQrMc2IZn-kOkd3CterPHBDfJ3JOUI6_qjG1bpGLuZtD8I3d7HlBkRw5YQEfl0ZnFOucG8ZdttP6yfwHG4tdEegHyHqLuiru9m6MKlkn0RjT7SkAbBNufana-LZ7VOiEZJt-472QNKtUbUhuclBJI0vBvuMWMfxBNGbSWJ5KrtV9AV1GxUyg3XxQTrdKEs1KpEng&state=97bb508c84b41379ef43b1b3b0e6f15495d556c27d943a6a" for 127.0.0.1 at 2016-12-07 01:21:14 +1100
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQAEYDgvoT685axRvp1yOVox7F82HmW8QtyJM8s4LAU4JSXFdl0Im1TBhohmVwg6M3zZppD4emJfvSi7Fx1Qh3GYfHiIYcjRtyjDC_qyONdQrMc2IZn-kOkd3CterPHBDfJ3JOUI6_qjG1bpGLuZtD8I3d7HlBkRw5YQEfl0ZnFOucG8ZdttP6yfwHG4tdEegHyHqLuiru9m6MKlkn0RjT7SkAbBNufana-LZ7VOiEZJt-472QNKtUbUhuclBJI0vBvuMWMfxBNGbSWJ5KrtV9AV1GxUyg3XxQTrdKEs1KpEng", "state"=>"97bb508c84b41379ef43b1b3b0e6f15495d556c27d943a6a"}
+  [1m[36mIdentity Load (0.8ms)[0m  [1mSELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1[0m  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[35mUser Load (5.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2016-12-06 14:20:30.420504"], ["current_sign_in_at", "2016-12-06 14:21:17.116666"], ["sign_in_count", 15], ["updated_at", "2016-12-06 14:21:17.124193"], ["id", 1]]
+  [1m[36m (26.5ms)[0m  [1mCOMMIT[0m
+Redirected to 
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 37.6ms)
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/redirecting.rb:70:in `redirect_to'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/flash.rb:57:in `redirect_to'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/instrumentation.rb:64:in `block in redirect_to'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/notifications.rb:164:in `block in instrument'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/notifications.rb:164:in `instrument'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/instrumentation.rb:63:in `redirect_to'
+  vendor/bundle/ruby/2.3.0/gems/turbolinks-5.0.0/lib/turbolinks/redirection.rb:12:in `redirect_to'
+  vendor/bundle/ruby/2.3.0/gems/devise-4.2.0/lib/devise/controllers/helpers.rb:238:in `sign_in_and_redirect'
+  (eval):6:in `spotify'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/abstract_controller/base.rb:198:in `process_action'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/callbacks.rb:117:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/callbacks.rb:505:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/notifications.rb:164:in `block in instrument'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/notifications.rb:164:in `instrument'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.5.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/abstract_controller/base.rb:137:in `process'
+  vendor/bundle/ruby/2.3.0/gems/actionview-4.2.5.2/lib/action_view/rendering.rb:30:in `process'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal.rb:196:in `dispatch'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_controller/metal.rb:237:in `block in action'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/journey/router.rb:30:in `each'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/journey/router.rb:30:in `serve'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/routing/route_set.rb:815:in `call'
+  vendor/bundle/ruby/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:408:in `call_app!'
+  vendor/bundle/ruby/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:362:in `callback_phase'
+  vendor/bundle/ruby/2.3.0/gems/omniauth-oauth2-1.1.2/lib/omniauth/strategies/oauth2.rb:77:in `callback_phase'
+  vendor/bundle/ruby/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:227:in `callback_call'
+  vendor/bundle/ruby/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:184:in `call!'
+  vendor/bundle/ruby/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:164:in `call'
+  vendor/bundle/ruby/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:186:in `call!'
+  vendor/bundle/ruby/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:164:in `call'
+  vendor/bundle/ruby/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/ruby/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/ruby/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/flash.rb:260:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.5.2/lib/active_record/query_cache.rb:36:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.5.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.5.2/lib/active_record/migration.rb:377:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'
+  vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'
+  vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.5.2/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.5.2/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.5.2/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.5.2/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.5.2/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.5.2/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.4ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.8ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.9ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (67.8ms)
+
+
+Started GET "/users/auth/spotify/callback?code=AQAEYDgvoT685axRvp1yOVox7F82HmW8QtyJM8s4LAU4JSXFdl0Im1TBhohmVwg6M3zZppD4emJfvSi7Fx1Qh3GYfHiIYcjRtyjDC_qyONdQrMc2IZn-kOkd3CterPHBDfJ3JOUI6_qjG1bpGLuZtD8I3d7HlBkRw5YQEfl0ZnFOucG8ZdttP6yfwHG4tdEegHyHqLuiru9m6MKlkn0RjT7SkAbBNufana-LZ7VOiEZJt-472QNKtUbUhuclBJI0vBvuMWMfxBNGbSWJ5KrtV9AV1GxUyg3XxQTrdKEs1KpEng&state=97bb508c84b41379ef43b1b3b0e6f15495d556c27d943a6a" for 127.0.0.1 at 2016-12-07 01:21:35 +1100
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"code"=>"AQAEYDgvoT685axRvp1yOVox7F82HmW8QtyJM8s4LAU4JSXFdl0Im1TBhohmVwg6M3zZppD4emJfvSi7Fx1Qh3GYfHiIYcjRtyjDC_qyONdQrMc2IZn-kOkd3CterPHBDfJ3JOUI6_qjG1bpGLuZtD8I3d7HlBkRw5YQEfl0ZnFOucG8ZdttP6yfwHG4tdEegHyHqLuiru9m6MKlkn0RjT7SkAbBNufana-LZ7VOiEZJt-472QNKtUbUhuclBJI0vBvuMWMfxBNGbSWJ5KrtV9AV1GxUyg3XxQTrdKEs1KpEng", "state"=>"97bb508c84b41379ef43b1b3b0e6f15495d556c27d943a6a"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:21:37 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (17.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 443ms (Views: 367.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:38 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:39 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:21:41 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:21:42 +1100
+
+
+Started GET "/users/auth/spotify/callback?code=AQB5tR4xaVFxCh9Z_jj5EES7Vu4xuERVCF007ZA9vEbLfwi99bBxYsUYrPR2snUeJV27R1U-eP9PyYzKP7-8szhwBY7SzslsIbWIf9dfAjqPPuln0o5Fdc-PaqIVEop_nc-NEbG2CVnN6xzeEjtNqLse5jO3-fB0tbeQ4u6KzuC3ucCnO0WvSQiygiMBS8hNUfgxpiQ7tPyhky7KfLvmyBfMwo-9dORyIhWldnDPbSXJ15w-gDmV23vyEYhmvN3sFI0warVtmwRoJ8d4mkiQ8UJw3ieF6YjOhthxhaAMrRS0fw&state=29cb3dcc23a823c71c962b44d1599368dbe7576f311b3568" for 127.0.0.1 at 2016-12-07 01:21:42 +1100
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQB5tR4xaVFxCh9Z_jj5EES7Vu4xuERVCF007ZA9vEbLfwi99bBxYsUYrPR2snUeJV27R1U-eP9PyYzKP7-8szhwBY7SzslsIbWIf9dfAjqPPuln0o5Fdc-PaqIVEop_nc-NEbG2CVnN6xzeEjtNqLse5jO3-fB0tbeQ4u6KzuC3ucCnO0WvSQiygiMBS8hNUfgxpiQ7tPyhky7KfLvmyBfMwo-9dORyIhWldnDPbSXJ15w-gDmV23vyEYhmvN3sFI0warVtmwRoJ8d4mkiQ8UJw3ieF6YjOhthxhaAMrRS0fw", "state"=>"29cb3dcc23a823c71c962b44d1599368dbe7576f311b3568"}
+  [1m[35mIdentity Load (0.5ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (28.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2016-12-06 14:21:17.116666"], ["current_sign_in_at", "2016-12-06 14:21:46.364567"], ["sign_in_count", 16], ["updated_at", "2016-12-06 14:21:46.383317"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 120ms (ActiveRecord: 39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:21:46 +1100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (1.4ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."user_id" = $1 AND "identities"."provider" = $2  ORDER BY "identities"."id" ASC LIMIT 1  [["user_id", 1], ["provider", "spotify"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mIdentity Exists (6.8ms)[0m  SELECT  1 AS one FROM "identities" WHERE ("identities"."uid" = '227kjmpvirttrapnl4v2c2nhq' AND "identities"."id" != 1 AND "identities"."provider" = 'spotify') LIMIT 1
+  [1m[36mSQL (2.1ms)[0m  [1mUPDATE "identities" SET "access_token" = $1, "updated_at" = $2 WHERE "identities"."id" = $3[0m  [["access_token", "BQA6RI57KlG1Msmc8zTd-9QOu5B_59a28KzfdwbTJsXKTjJ2rTgYXVjkyNg9nsVpQGVKSlN5_BySI2xjTfjjkav-gnGuXfwQvXpWKWF1dcezl1WTAO0o3049mOAQsntxb8QmMKOJA7WKtiJZfzLWhKT2DX9qZ7mcKmx5kzZmqvaz08SO0Xok9mRNt-fhBrMMpXvwlDk"], ["updated_at", "2016-12-06 14:21:50.543847"], ["id", 1]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  Rendered home/index.html.erb within layouts/application (3999.6ms)
+Completed 200 OK in 4321ms (Views: 4299.9ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:21:50 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/assets/loading-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" for 127.0.0.1 at 2016-12-07 01:21:51 +1100
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-12-07 01:22:14 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (10.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (3.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (0.7ms)[0m  [1mSELECT "identities".* FROM "identities" WHERE "identities"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 223ms (Views: 199.4ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2016-12-07 01:22:14 +1100
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:22:17 +1100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mIdentity Load (0.4ms)[0m  [1mSELECT  "identities".* FROM "identities" WHERE "identities"."user_id" = $1 AND "identities"."provider" = $2  ORDER BY "identities"."id" ASC LIMIT 1[0m  [["user_id", 1], ["provider", "spotify"]]
+  Rendered home/index.html.erb within layouts/application (1183.3ms)
+Completed 200 OK in 1481ms (Views: 1474.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2016-12-07 01:22:32 +1100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 193ms (Views: 191.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:22:42 +1100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (1.6ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."user_id" = $1 AND "identities"."provider" = $2  ORDER BY "identities"."id" ASC LIMIT 1  [["user_id", 1], ["provider", "spotify"]]
+  Rendered home/index.html.erb within layouts/application (3644.3ms)
+Completed 200 OK in 4098ms (Views: 4090.6ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-07 01:31:08 +1100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8rTLl75FCK4diYLkME/878F2V3eF6BTIk2BRU8+fQf0ByyslvsejWf1lJ/KSxFstyarbqCCjNcsWb6pGJd4QiA=="}
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:31:08 +1100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:31:08 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (22.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 601ms (Views: 597.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/soundcloud" for 127.0.0.1 at 2016-12-07 01:31:13 +1100
+
+
+Started GET "/users/auth/soundcloud" for 127.0.0.1 at 2016-12-07 01:31:14 +1100
+
+
+Started GET "/soundcloud/oauth-callback?error=redirect_uri_mismatch&error_description=The+redirection+URI+provided+does+not+match+a+pre-registered+value.&state=e81320e0d0ac670c21f337ef968a46c15d497095c56277a2" for 127.0.0.1 at 2016-12-07 01:31:15 +1100
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"error"=>"redirect_uri_mismatch", "error_description"=>"The redirection URI provided does not match a pre-registered value.", "state"=>"e81320e0d0ac670c21f337ef968a46c15d497095c56277a2"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (36.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (56.4ms)
+Completed 200 OK in 457ms (Views: 455.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:16 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:17 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:18 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:18 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:18 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:18 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:18 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:18 +1100
+
+
+Started GET "/users/auth/soundcloud" for 127.0.0.1 at 2016-12-07 01:31:23 +1100
+
+
+Started GET "/users/auth/soundcloud" for 127.0.0.1 at 2016-12-07 01:31:25 +1100
+
+
+Started GET "/soundcloud/oauth-callback?error=redirect_uri_mismatch&error_description=The+redirection+URI+provided+does+not+match+a+pre-registered+value.&state=19115f7d4fac088a05babd1e3432a2d97378214998be0f8b" for 127.0.0.1 at 2016-12-07 01:31:26 +1100
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"error"=>"redirect_uri_mismatch", "error_description"=>"The redirection URI provided does not match a pre-registered value.", "state"=>"19115f7d4fac088a05babd1e3432a2d97378214998be0f8b"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:31:26 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (26.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 423ms (Views: 419.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:31:26 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:31:26 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:26 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:31:26 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:26 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:26 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:31:27 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:35:07 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:35:09 +1100
+
+
+Started GET "/users/auth/spotify/callback?code=AQAgm3eF3f1kvPN_Yw-4fMxBBNcTJsmN7fi5Z7yiPvFOp0KMtMwoSbNH9zvLh9nmEBGGpT_QY38H-vN0XU248fpKM2Ga-Q-d3t_zzeLrrCKxK3qkpilz3ExdIls77tEJEyA1G3t0bccGeb5Zf94pe3yHfQAfj0ioi_57XJDKyjLvusulJVCPCnjGsbew30biSls41YuSmLFeIm4ejjNbxWIAeLUBO_TYNjhyjhSTEg8Lw4CstWXq4BIYErOhFk-WSiJvbl3A-OUZwclORBr3JM2pr36AgQxknecwhnPHC9sC_w&state=5eefb8b26abda4d93eb327d68130339840e2e7683de6839c" for 127.0.0.1 at 2016-12-07 01:35:10 +1100
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQAgm3eF3f1kvPN_Yw-4fMxBBNcTJsmN7fi5Z7yiPvFOp0KMtMwoSbNH9zvLh9nmEBGGpT_QY38H-vN0XU248fpKM2Ga-Q-d3t_zzeLrrCKxK3qkpilz3ExdIls77tEJEyA1G3t0bccGeb5Zf94pe3yHfQAfj0ioi_57XJDKyjLvusulJVCPCnjGsbew30biSls41YuSmLFeIm4ejjNbxWIAeLUBO_TYNjhyjhSTEg8Lw4CstWXq4BIYErOhFk-WSiJvbl3A-OUZwclORBr3JM2pr36AgQxknecwhnPHC9sC_w", "state"=>"5eefb8b26abda4d93eb327d68130339840e2e7683de6839c"}
+  [1m[35mIdentity Load (1.3ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2016-12-06 14:21:46.364567"], ["current_sign_in_at", "2016-12-06 14:35:15.872314"], ["sign_in_count", 17], ["updated_at", "2016-12-06 14:35:15.877934"], ["id", 1]]
+  [1m[35m (32.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1/finish_signup
+Completed 302 Found in 228ms (ActiveRecord: 96.2ms)
+
+
+Started GET "/users/1/finish_signup" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+Processing by UsersController#finish_signup as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/finish_signup.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 488ms (Views: 468.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:16 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:17 +1100
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-07 01:35:36 +1100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"35ZpnoBhuKh3cqG4auVHMV28iZjaXDaF/+rlPSAWnFuPpx/cQyY0/oYRB+BkFujjZBcmtioikTLpr05Qs4o3SA=="}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 101ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:35:36 +1100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:35:36 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (45.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 488ms (Views: 486.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:35:39 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:35:41 +1100
+
+
+Started GET "/users/auth/spotify/callback?code=AQC_kjqlnnHJksJYEkzSBlj9LLYzblJikoheY3PyzJ7nVV1whsxZ0riZ-U5HtTDoLsSKB0F12_nismUxMTvgQ78McfDtko3G_AeAge5rOoLWudlPmcKExIUSFhaxQg06wzyNQ8LCI0pX6cU_5On892VyY36cD74GLozmpzHHTaV1aTIgj1EgftXhk-6RcIPEg-vq6j1PcZDtZ6UCv8e614Ah86azoCS8ri2XLp09pdRPtEPADCEFtELfGPOEPlekSOGBvI915BZeqcf1NHBysoZkzLjG50Nd8vfUCFvvqplMEQ&state=642b9f2bbdbda756f4408eff5b29864f590b24a9656d2e8a" for 127.0.0.1 at 2016-12-07 01:35:42 +1100
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQC_kjqlnnHJksJYEkzSBlj9LLYzblJikoheY3PyzJ7nVV1whsxZ0riZ-U5HtTDoLsSKB0F12_nismUxMTvgQ78McfDtko3G_AeAge5rOoLWudlPmcKExIUSFhaxQg06wzyNQ8LCI0pX6cU_5On892VyY36cD74GLozmpzHHTaV1aTIgj1EgftXhk-6RcIPEg-vq6j1PcZDtZ6UCv8e614Ah86azoCS8ri2XLp09pdRPtEPADCEFtELfGPOEPlekSOGBvI915BZeqcf1NHBysoZkzLjG50Nd8vfUCFvvqplMEQ", "state"=>"642b9f2bbdbda756f4408eff5b29864f590b24a9656d2e8a"}
+  [1m[35mIdentity Load (0.4ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2016-12-06 14:35:15.872314"], ["current_sign_in_at", "2016-12-06 14:35:45.487638"], ["sign_in_count", 18], ["updated_at", "2016-12-06 14:35:45.491883"], ["id", 1]]
+  [1m[35m (29.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1/finish_signup
+Completed 302 Found in 112ms (ActiveRecord: 34.6ms)
+
+
+Started GET "/users/1/finish_signup" for 127.0.0.1 at 2016-12-07 01:35:45 +1100
+Processing by UsersController#finish_signup as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/finish_signup.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 326ms (Views: 312.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:35:46 +1100
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-07 01:36:14 +1100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cSV0jN5UQWC6Mbzg5x5qGNasUbiULzFVl388QOWhlTUQih+7minq8WtznH27WI5XKRVitG3mXdR1aP8NgWt3rQ=="}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 67ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:36:15 +1100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:36:15 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (16.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 279ms (Views: 277.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:36:18 +1100
+
+
+Started GET "/users/auth/spotify" for 127.0.0.1 at 2016-12-07 01:36:19 +1100
+
+
+Started GET "/users/auth/spotify/callback?code=AQCeWU6xMPNv2E0xeDRBCeZqyXi0mglljpj4yk6zHOnkkgsLX1WiDFik3wKUoCWMw2fPGnC-gOYXa0U9qlcbjYD4nlBtV9rdSD1GF7dJZDi7l7q2ygoAR48gHnV3qgPt5UzUMle8woXb_Ga7vEMTgHAwE9EzXK99DpYuvlCm10bzkqABSGwHYfHOaq9uQwkrjFZiqKU9zRiKCYjrowRcFzCV8rhPvIp4wuI5txMa8kkm03d6zptYHuObT3FoM2XaURwG1HlFDcQsUnrKK9tIw-o9cqoChky4hkKaSYUV6WDA2Q&state=07a0bc7068ed92d8c693221c7a5770ad137d36cbc3261769" for 127.0.0.1 at 2016-12-07 01:36:20 +1100
+Processing by OmniauthCallbacksController#spotify as HTML
+  Parameters: {"code"=>"AQCeWU6xMPNv2E0xeDRBCeZqyXi0mglljpj4yk6zHOnkkgsLX1WiDFik3wKUoCWMw2fPGnC-gOYXa0U9qlcbjYD4nlBtV9rdSD1GF7dJZDi7l7q2ygoAR48gHnV3qgPt5UzUMle8woXb_Ga7vEMTgHAwE9EzXK99DpYuvlCm10bzkqABSGwHYfHOaq9uQwkrjFZiqKU9zRiKCYjrowRcFzCV8rhPvIp4wuI5txMa8kkm03d6zptYHuObT3FoM2XaURwG1HlFDcQsUnrKK9tIw-o9cqoChky4hkKaSYUV6WDA2Q", "state"=>"07a0bc7068ed92d8c693221c7a5770ad137d36cbc3261769"}
+  [1m[35mIdentity Load (0.6ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."uid" = $1 AND "identities"."provider" = $2 LIMIT 1  [["uid", "227kjmpvirttrapnl4v2c2nhq"], ["provider", "spotify"]]
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2016-12-06 14:35:45.487638"], ["current_sign_in_at", "2016-12-06 14:36:24.468545"], ["sign_in_count", 19], ["updated_at", "2016-12-06 14:36:24.473196"], ["id", 1]]
+  [1m[35m (26.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1/finish_signup
+Completed 302 Found in 82ms (ActiveRecord: 34.7ms)
+
+
+Started GET "/users/1/finish_signup" for 127.0.0.1 at 2016-12-07 01:36:24 +1100
+Processing by UsersController#finish_signup as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:36:24 +1100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (1.1ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."user_id" = $1 AND "identities"."provider" = $2  ORDER BY "identities"."id" ASC LIMIT 1  [["user_id", 1], ["provider", "spotify"]]
+  Rendered home/index.html.erb within layouts/application (1441.1ms)
+Completed 200 OK in 1712ms (Views: 1706.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap-generators.self-d04cfc0c1c23d021505962d311abd06ce47d9262a0acb9495ea40cab83ab613e.css?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap-variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/react.self-e3251ec4ec5e08041151d49a171f772e6b6236b38ad62c101e29be367138f487.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/components/loading.es6.self-3fbfab62ab981c480accddd7876e60afd74120d4ace373a55dfdc21b880779d1.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/components/spotify_playlists.es6.self-ae0a2605d65119d60ad754af6bce8690cdaf7d5d2bf9c4b146b38997724f8758.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:26 +1100
+
+
+Started GET "/assets/components/spotify_playlists_container.es6.self-7ed564f7af09182edbcf936c4655ba42e44cd66db713a77b3db1919828c0c3f9.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/assets/components/spotify_playlist.es6.self-706ef84e42c9f6b37f5d4eba3fb2c8939454060c7e4b1e4149cbf945c0df8621.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/assets/components/spotify_track.es6.self-c81b12581577d01b1708f964785b5dac7a2452c9e6c53ff6dbf7f2ef7e55b845.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/assets/components/spotify_tracks.es6.self-9f78415d2be89340838a833884a8d7c139b45c85879d066fdf02458082c6407e.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/assets/components/spotify_tracks_container.es6.self-fa80ffe0dc1e8cb87674a3e8773e505a3ee5e5ebf3092d3033e441347c7f99a3.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/assets/components/spotify_user_container.es6.self-e5015400c20938d7f78a1b8c20bb6632586e456594c64b783d1b9d95def6e11a.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/assets/components/spotify_user.es6.self-04a67f012f7a4f4628e384e4fe6f256f113953840a3c46d089d171551d5ccd1c.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/assets/loading-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" for 127.0.0.1 at 2016-12-07 01:36:27 +1100
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:36:50 +1100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mIdentity Load (0.2ms)[0m  SELECT  "identities".* FROM "identities" WHERE "identities"."user_id" = $1 AND "identities"."provider" = $2  ORDER BY "identities"."id" ASC LIMIT 1  [["user_id", 1], ["provider", "spotify"]]
+  Rendered home/index.html.erb within layouts/application (1402.2ms)
+Completed 200 OK in 1913ms (Views: 1909.3ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-07 01:36:55 +1100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aUmz37O+k3qPACDccp+k11x5oC/vDTTlYltQM5T3hGE36wOZNhfReec3Pwvhs9E4vmbzlLCcNCPvXydhzpCB4Q=="}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-07 01:36:56 +1100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-07 01:36:56 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (18.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 394ms (Views: 392.0ms | ActiveRecord: 0.0ms)

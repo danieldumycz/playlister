@@ -8,8 +8,7 @@ class User < ActiveRecord::Base
 
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable
-  devise :database_authenticatable, :registerable, :confirmable,
-    :recoverable, :rememberable, :trackable, :validatable, :omniauthable
+  devise :database_authenticatable, :registerable, :rememberable, :trackable, :omniauthable
 
   def self.find_for_oauth(auth, signed_in_resource = nil)
 
