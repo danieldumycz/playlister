@@ -1,4 +1,4 @@
-class SpotifyPlaylistsContainer extends React.Component {
+class SpotifyTracksContainer extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -10,14 +10,15 @@ class SpotifyPlaylistsContainer extends React.Component {
 	}
 
  	loadPlaylistData(){
- 		var uri = "https://api.spotify.com/v1/users/" + this.props.spotify.uid + "/playlists";
+ 		var uri = "https://api.spotify.com/v1/users/" + this.props.uid + "/playlists/" + this.props.playlist.id + "/tracks";
  		$.ajax({
       url: uri,
       dataType: 'json',
       headers: {
-         'Authorization': 'Bearer ' + this.props.spotify.access_token
+         'Authorization': 'Bearer ' + this.props.access_token
       },
       success: function(data) {
+      	console.log(data);
         this.setState({ 
         	data: data,
         });
@@ -36,9 +37,10 @@ class SpotifyPlaylistsContainer extends React.Component {
 
   	return (
 	    <div>
-	  		<SpotifyPlaylists access_token={this.props.spotify.access_token} playlists={this.state.data.items} />
+	  		<SpotifyTracks tracks={this.state.data.items} />
 	    </div>
 	  );
   }
 }
+
 

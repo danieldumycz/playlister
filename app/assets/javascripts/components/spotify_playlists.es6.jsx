@@ -1,12 +1,11 @@
 class SpotifyPlaylists extends React.Component {
   render () {
-    return (
-    	<div class="list-group">
-	    	{this.props.playlists.map(function(object, i){
-	        return <SpotifyPlaylist playlist={object} key={i} />;
-	    	})}
-	    </div>	
-    );
+		return (
+			<ul>
+				{this.props.playlists.map(playlist =>
+					<SpotifyPlaylist access_token={this.props.access_token} playlist={playlist} key={playlist.id}/>  
+	    	)}
+    	</ul>
+		);
   }
-
 }

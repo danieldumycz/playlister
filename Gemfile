@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+#For ENV variables
+gem 'dotenv-rails', :groups => [:development, :test]
+
+gem "twitter-bootstrap-rails"
+
 gem 'bootstrap-generators', git: 'git://github.com/decioferreira/bootstrap-generators.git'
 
 gem 'devise'

@@ -3,9 +3,9 @@
 Devise.setup do |config|
 
   #For omniauth provider configuration: provider: name, App_Key, App_Secret
-  config.omniauth :soundcloud, "SOUNDCLOUD_CLIENT_ID", "SOUNDCLOUD_CLIENT_SECRET", client_options: { redirect_uri: '/users/auth/soundcloud/callback' }
+  config.omniauth :soundcloud, ENV['SOUNDCLOUD_CLIENT_ID'], ENV['SOUNDCLOUD_CLIENT_SECRET'], client_options: { redirect_uri: '/users/auth/soundcloud/callback' }
 
-  config.omniauth :spotify, 'SPOTIFY_CLIENT_ID', 'SPOTIFY_CLIENT_SECRET', scope: 'playlist-read-private user-read-private user-read-email'
+  config.omniauth :spotify, ENV['SPOTIFY_CLIENT_ID'], ENV['SPOTIFY_CLIENT_SECRET'], scope: 'playlist-read-private user-read-private user-read-email'
 
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
