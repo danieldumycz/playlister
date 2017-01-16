@@ -7,7 +7,6 @@ class SoundcloudController < ApplicationController
 		                        :client_secret => ENV["SOUNDCLOUD_CLIENT_SECRET"],
 		                        :redirect_uri => "http://localhost:3000/soundcloud/oauth-callback",
 		                        :response_type => 'code')
-
 		# redirect user to authorize URL
 		redirect_to client.authorize_url(:grant_type => 'authorization_code', :scope => 'non-expiring', :display => 'popup') 
   end
@@ -25,7 +24,9 @@ class SoundcloudController < ApplicationController
 		unless Identity.where(:uid => soundcloud_user["id"]).present?
 		  Identity.create_from_soundcloud(current_user, soundcloud_user["id"], access_token)
 		end
-		redirect_to root_url, notice: "Soundcloud Identity Created"
+
+		redirect_to(root_path(:notice => 'Please register as a new user', :access_token => access_token["access_token"]))
+		# redirect_to root_url, , notice: "Successfully Connected to Soundcloud" 
 	end
 
 	def refresh

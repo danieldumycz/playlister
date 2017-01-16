@@ -1,5 +1,4 @@
-//Container Component. See: https://css-tricks.com/learning-react-container-components/
-class SpotifyUserContainer extends React.Component {
+class SoundcloudUserContainer extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -9,10 +8,7 @@ class SpotifyUserContainer extends React.Component {
 
  	componentWillMount(){
  		$.ajax({
-      url: 'https://api.spotify.com/v1/me',
-      headers: {
-         'Authorization': 'Bearer ' + this.props.spotify.access_token
-      },
+      url: 'https://api.soundcloud.com/me?oauth_token=' + this.props.access_token,
       success: function(data) {
         this.setState({ 
         	user: data 
@@ -29,7 +25,7 @@ class SpotifyUserContainer extends React.Component {
       return <Loading />;
     }
     return (    	
-    	<SpotifyUser user={this.state.user} />
+    	<SoundcloudUser user={this.state.user} />
     );
   }
 }

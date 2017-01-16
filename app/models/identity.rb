@@ -62,4 +62,9 @@ class Identity < ActiveRecord::Base
         return "Error: #{result.code}"
     end
   end
+
+  def save_soundcloud_token(access_token)
+    self.update(uid: self.uid, provider: self.provider, access_token: access_token)
+    self.save
+  end
 end

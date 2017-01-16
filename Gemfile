@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #For ENV variables
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails'
 
 gem "twitter-bootstrap-rails"
 

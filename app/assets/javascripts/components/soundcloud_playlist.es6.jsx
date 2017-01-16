@@ -1,4 +1,4 @@
-class SpotifyPlaylist extends React.Component {
+class SoundcloudPlaylist extends React.Component {
 	constructor() {
     super();
     this.state = {
@@ -16,15 +16,16 @@ class SpotifyPlaylist extends React.Component {
   }
 
   render () {
+  	console.log(this.props.playlist);
     return (
     	<div>
 	    	<ul>
 	    		<h4>
-	    			{this.props.playlist.name + " "}
+	    			{this.props.playlist.title + " "}
 	    			({this.state.clicked ? <a onClick={this.onClick}>Hide</a> : <a onClick={this.onClick}>Show</a> })
 	    		</h4>
 	    		{this.state.clicked ? 
-	    			<SpotifyTracksContainer access_token={this.props.access_token} uid={this.props.playlist.owner.id} playlist={this.props.playlist} />
+	    			<SoundcloudUserContainer access_token={this.props.access_token} playlist={this.props.playlist} />
 						: null
 					}
 	    	</ul>
