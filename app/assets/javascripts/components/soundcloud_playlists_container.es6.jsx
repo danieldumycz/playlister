@@ -18,7 +18,6 @@ class SoundcloudPlaylistsContainer extends React.Component {
       url: uri,
       dataType: 'json',
       success: function(data) {
-      	console.log(data);
         this.setState({ 
         	data: data,
         });

@@ -63,6 +63,24 @@ class Identity < ActiveRecord::Base
     end
   end
 
+  def test_soundcloud_auth
+    result = HTTParty.get(
+        "https://api.spotify.com/v1/me",
+        :body => {},
+        :headers => {"Authorization" => "Bearer #{access_token}"}
+        )
+    case result.code
+      when 200
+        return 200
+      when 401
+        return self.refresh_soundcloud_token
+      when 404
+        return "API endpoint has depreciated: #{result.code}"
+      when 500...600
+        return "Error: #{result.code}"
+    end
+  end
+
   def save_soundcloud_token(access_token)
     self.update(uid: self.uid, provider: self.provider, access_token: access_token)
     self.save

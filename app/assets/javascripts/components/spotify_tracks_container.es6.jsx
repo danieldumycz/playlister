@@ -18,6 +18,7 @@ class SpotifyTracksContainer extends React.Component {
          'Authorization': 'Bearer ' + this.props.access_token
       },
       success: function(data) {
+        console.log(data);
         this.setState({ 
         	data: data,
         });
