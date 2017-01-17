@@ -45,10 +45,15 @@ class SpotifyPlaylistsContainer extends React.Component {
   	}
   	return (
 	    <div>
-        {this.state.clicked ? <a onClick={this.onClick}>Hide</a> : <a onClick={this.onClick}>Load Spotify Data</a> }
-        {this.state.clicked ? <SpotifyPlaylists access_token={this.props.spotify.access_token} playlists={this.state.data.items} />
-        : null }
+        <div className="right_align">
+          {this.state.clicked ? <a onClick={this.onClick}>Hide</a> : <a onClick={this.onClick}>Load Spotify Data</a> }
+          <br/>
+        </div>
+        <div>
+          {this.state.clicked ? <SpotifyPlaylists access_token={this.props.spotify.access_token} playlists={this.state.data.items} />
+           : null }
   	    </div>
+      </div>
 	  );
   }
 }

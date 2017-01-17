@@ -41,11 +41,16 @@ class SoundcloudPlaylistsContainer extends React.Component {
   		return <Loading />;
   	}
   	return (
-	    <div>
-        {this.state.clicked ? <a onClick={this.onClick}>Hide</a> : <a onClick={this.onClick}>Load Soundcloud Data</a> }
-        {this.state.clicked ? <SoundcloudPlaylists access_token={this.props.access_token} playlists={this.state.data} />
-        : null }
-  	    </div>
+      <div>
+        <div className="right_align">
+            {this.state.clicked ? <a onClick={this.onClick}>Hide</a> : <a onClick={this.onClick}>Load Soundcloud Data</a> }
+            <br/>
+        </div>
+        <div>
+          {this.state.clicked ? <SoundcloudPlaylists access_token={this.props.access_token} playlists={this.state.data} />
+          : null }
+    	  </div>
+      </div>
 	  );
   }
 }

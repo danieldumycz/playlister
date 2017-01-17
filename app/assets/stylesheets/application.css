@@ -46,7 +46,7 @@
 
 .spotify_card {
     float:left; 
-    width: 40%;
+    width: 45%;
     padding: 2px 20px 20px 20px;
     box-shadow: 0 0 8px 0 rgb(7,209,89);
     transition: 0.3s;
@@ -55,7 +55,7 @@
 
 .soundcloud_card {
     float:right; 
-    width: 40%;
+    width: 45%;
     padding: 2px 20px 20px 20px;
     box-shadow: 0 0 8px 0 rgb(246,107,15);
     transition: 0.3s;
@@ -158,14 +158,21 @@ hr {
   margin-top: -150px; /* negative value of footer height */
   height: 150px;
   clear:both;
-  padding-top:20px;
+  padding-top:1rem;
 } 
 
 .subheading {
   float:right;
   font-size:75%;
   color:grey;
-  padding-right: 10px;
+  padding-right: 2rem;
+}
+
+.right_align a{
+  float:right;
+  cursor:pointer;
+  margin-bottom: 2rem;
+    clear:both;
 }
 
 /* Clearing
