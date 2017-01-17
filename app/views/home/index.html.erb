@@ -1,16 +1,17 @@
 <div class="page-header">
 	<ul class="list-inline">
-	  <li><h1>DASHBOARD</h1></li>
+	  <li><h1>PL4YLISTR</h1></li>
+	  <hr>
 	  <li>
-	  	<%= link_to "Connect with Spotify", "https://accounts.spotify.com/authorize/?client_id=#{ENV['SPOTIFY_CLIENT_ID']}&response_type=code&scope=#{@scope}&redirect_uri=#{@redirect_uri}" %>
+	  	<%= link_to "Connect with Spotify", "https://accounts.spotify.com/authorize/?client_id=#{ENV['SPOTIFY_CLIENT_ID']}&response_type=code&scope=#{@scope}&redirect_uri=#{@redirect_uri}", class: "button"%>
 	  </li>
 	  <li>
-	  	<%= link_to image_tag("http://connect.soundcloud.com/2/btn-connect-sc-m.png", border: 0), soundcloud_connect_path%>
+	    <%= link_to "Connect with Soundcloud", soundcloud_connect_path, class: "button"%>
 	  </li>
 	</ul>
 </div>
 <div style="width: 100%;">
-   <div style="float:left; width: 50%">
+   <div class="spotify_card">
    		<% spotify = current_user.identities.where(provider: 'spotify').first%>
 			<% if spotify.access_token.empty? %>
 				<% spotify.auth_spotify(params[:code],params[:state]) %>
@@ -20,7 +21,7 @@
 				<%= react_component('SpotifyPlaylistsContainer', spotify: spotify) %>
 			<% end %>
    </div>
-   <div style="float:left; width:50%">
+   <div class="soundcloud_card">
     <% soundcloud = current_user.identities.where(provider: 'soundcloud').first%>
 		<% if !soundcloud.access_token.empty? %>
    		<%= react_component('SoundcloudUserContainer', access_token: soundcloud.access_token) %>
@@ -31,4 +32,7 @@
    </div>
 </div>
 <div style="clear:both"></div>
+<footer class="footer">
+        <p></p>
+</footer>
 

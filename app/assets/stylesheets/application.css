@@ -14,8 +14,37 @@
  *= require_self
  */
 
-.super {
-	margin: 400%; 
+/* Cards
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.card {
+    padding: 2px 2px 2px 2px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.spotify_card {
+    float:left; 
+    width: 40%;
+    padding: 2px 20px 20px 20px;
+    box-shadow: 0 0 8px 0 rgb(7,209,89);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.soundcloud_card {
+    float:right; 
+    width: 40%;
+    padding: 2px 20px 20px 20px;
+    box-shadow: 0 0 8px 0 rgb(246,107,15);
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
 /* Buttons
@@ -109,6 +138,13 @@ hr {
   border-top: 1px solid #E1E1E1; 
 }
 
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+} 
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -131,7 +167,6 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-
 
 /* Larger than mobile */
 @media (min-width: 400px) {}

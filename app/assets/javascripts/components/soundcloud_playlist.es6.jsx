@@ -17,11 +17,10 @@ class SoundcloudPlaylist extends React.Component {
 
   render () {
     return (
-    	<div>
+    	<div className="card" onClick={this.onClick}>
 	    	<ul>
 	    		<h4>
 	    			{this.props.playlist.title + " "}
-	    			({this.state.clicked ? <a onClick={this.onClick}>Hide</a> : <a onClick={this.onClick}>Show</a> })
 	    		</h4>
 	    		{this.state.clicked ? 
 	    			<SoundcloudTracks access_token={this.props.access_token} tracks={this.props.playlist.tracks} />
