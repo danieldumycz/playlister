@@ -1,10 +1,8 @@
 class SpotifyTrack extends React.Component {
   render () {
     return (
-    	<div>
-	    	<li>
+    	<div className="small_card">
 	    		{this.props.track.name}
-	    	</li>
 	   	</div>
     );
   }

@@ -20,13 +20,28 @@
 .card {
     padding: 2px 2px 2px 2px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    transition: 0.1s;
     width: 100%;
     border-radius: 5px;
 }
 
+.card h4{
+    cursor:pointer;
+}
+
 .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.small_card {
+    padding: 10px;
+    transition: 0s;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.small_card:hover {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
 .spotify_card {
@@ -145,6 +160,13 @@ hr {
   clear:both;
   padding-top:20px;
 } 
+
+.subheading {
+  float:right;
+  font-size:75%;
+  color:grey;
+  padding-right: 10px;
+}
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

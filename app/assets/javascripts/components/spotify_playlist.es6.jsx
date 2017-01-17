@@ -17,17 +17,21 @@ class SpotifyPlaylist extends React.Component {
 
   render () {
     return (
-    	<div className="card" onClick={this.onClick}>
-	    	<ul>
+    	<div className="card" >
+	    	<ul onClick={this.onClick}>
 	    		<h4>
 	    			{this.props.playlist.name + " "}
+            <p className="subheading">
+              #{this.props.playlist.tracks.total} tracks
+            </p>
 	    		</h4>
-	    		{this.state.clicked ? 
-	    			<SpotifyTracksContainer access_token={this.props.access_token} uid={this.props.playlist.owner.id} playlist={this.props.playlist} />
-						: null
-					}
 	    	</ul>
-	    	<br />
+        <hr></hr>
+        {this.state.clicked ? 
+          <SpotifyTracksContainer access_token={this.props.access_token} uid={this.props.playlist.owner.id} playlist={this.props.playlist} />
+          : null
+        }
+	    	<br/>
 	    </div>
     ); 
   }
