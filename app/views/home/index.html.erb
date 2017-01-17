@@ -23,8 +23,8 @@
    <div style="float:left; width:50%">
     <% soundcloud = current_user.identities.where(provider: 'soundcloud').first%>
 		<% if !soundcloud.access_token.empty? %>
-   		<%= react_component('SoundcloudUserContainer', access_token: params[:access_token]) %>
-   		<%= react_component('SoundcloudPlaylistsContainer', access_token: params[:access_token]) %>
+   		<%= react_component('SoundcloudUserContainer', access_token: soundcloud.access_token) %>
+   		<%= react_component('SoundcloudPlaylistsContainer', access_token: soundcloud.access_token) %>
    	<% else %>
    		<h2> Not Connected to <span style="color:#f66b0f;">Soundcloud</span></h2>
    	<% end %>
