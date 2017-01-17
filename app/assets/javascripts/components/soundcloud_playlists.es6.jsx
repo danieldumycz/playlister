@@ -1,6 +1,5 @@
 class SoundcloudPlaylists extends React.Component {
   render () {
-  	console.log(this.props.playlists);
 		return (
 			<ul>
 				{this.props.playlists.map(playlist =>
