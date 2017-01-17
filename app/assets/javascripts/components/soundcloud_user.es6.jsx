@@ -8,7 +8,7 @@ class SoundcloudUser extends React.Component {
     		<h2>
     			Connected to <span style={divStyle2}> Soundcloud</span>
     		</h2>
-    		<p><b>Owner: </b>{this.props.user.username}</p>
+    		<p class="super"><b>Owner: </b>{this.props.user.username}</p>
     	</div>
     );
   }

@@ -45,6 +45,7 @@
       </div>
     </div>
   </nav>
+  <br>
   <div class="container">
     <% flash.each do |name, msg| %>
       <%= content_tag :div, class: "alert alert-#{ name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do %>
