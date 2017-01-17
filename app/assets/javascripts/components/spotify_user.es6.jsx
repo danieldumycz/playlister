@@ -9,7 +9,7 @@ class SpotifyUser extends React.Component {
     		<h2>
     			Connected to <span style={divStyle}> Spotify</span>
     		</h2>
-    		<p>{this.props.user.display_name}</p>
+    		<p><b>Owner: </b>{this.props.user.display_name}</p>
     	</div>
     );
   }
