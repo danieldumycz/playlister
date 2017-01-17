@@ -3,8 +3,12 @@ class SpotifyTracksContainer extends React.Component {
     super();
     this.state = {
     	data: null,
+      next: null,
+      clicked: false
   	}
+    this.onClick = this.onClick.bind(this);
   }
+
 	componentDidMount() {
 	    this.loadPlaylistData();
 	}
@@ -20,6 +24,7 @@ class SpotifyTracksContainer extends React.Component {
       success: function(data) {
         this.setState({ 
         	data: data,
+          next: data.next,
         });
       }.bind(this),
       error: function(xhr, status, err) {
@@ -27,19 +32,33 @@ class SpotifyTracksContainer extends React.Component {
       }.bind(this)
     });
  	}
-
+  
+  onClick() {
+    if(this.state.clicked){
+      this.setState({ clicked : false});
+    } else {
+      this.setState({ clicked : true});
+    }
+  }
 	
   render () {
   	if(this.state.data === null){
   		return <Loading />;
   	}
+    console.log(this.state.clicked);
+        console.log("NExt?:" + this.state.next);
 
   	return (
-	    <div>
-	  		<SpotifyTracks tracks={this.state.data.items} />
-	    </div>
+      <div>
+  	  	<SpotifyTracks tracks={this.state.data.items} access_token={this.props.access_token} next={this.state.next} />
+        <div className="right_align">
+          {this.props.next ? <a onClick={this.onClick}>More+</a> : null }
+        </div>
+        {this.state.clicked  == true ? 
+          <SpotifyMoreTracksContainer access_token={this.props.access_token} next={this.props.next} />
+           : null
+        }
+      </div>
 	  );
   }
 }
-
-

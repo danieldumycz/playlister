@@ -169,12 +169,17 @@ hr {
 }
 
 .right_align a{
+  clear:both;
   float:right;
   cursor:pointer;
   margin-bottom: 2rem;
-    clear:both;
 }
 
+.center_align img{
+  clear:both;
+  text-align:center;
+  cursor:progress;
+}
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
