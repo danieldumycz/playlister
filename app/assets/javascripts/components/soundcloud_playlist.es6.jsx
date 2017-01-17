@@ -24,7 +24,7 @@ class SoundcloudPlaylist extends React.Component {
 	    			({this.state.clicked ? <a onClick={this.onClick}>Hide</a> : <a onClick={this.onClick}>Show</a> })
 	    		</h4>
 	    		{this.state.clicked ? 
-	    			<SoundcloudTracksContainer access_token={this.props.access_token} playlist={this.props.playlist} />
+	    			<SoundcloudTracks access_token={this.props.access_token} tracks={this.props.playlist.tracks} />
 						: null
 					}
 	    	</ul>
