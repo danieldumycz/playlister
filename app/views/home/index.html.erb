@@ -3,7 +3,7 @@
 	  <li><h1>PL4YLISTR</h1></li>
 	  <hr>
 	  <li>
-	  	<%= link_to "Connect with Spotify", "https://accounts.spotify.com/authorize/?client_id=#{ENV['SPOTIFY_CLIENT_ID']}&response_type=code&scope=#{@scope}&redirect_uri=#{@redirect_uri}", class: "button"%>
+	  	<%= link_to "Connect with Spotify", "https://accounts.spotify.com/authorize/?client_id=#{ENV['SPOTIFY_CLIENT_ID']}&response_type=code&scope=#{@scope}&redirect_uri=#{ENV['SPOTIFY_REDIRECT_URI']}", class: "button"%>
 	  </li>
 	  <li>
 	    <%= link_to "Connect with Soundcloud", soundcloud_connect_path, class: "button"%>
@@ -13,22 +13,26 @@
 <div style="width: 100%;">
    <div class="spotify_card">
    		<% spotify = current_user.identities.where(provider: 'spotify').first%>
-			<% if spotify.access_token.empty? %>
-				<% spotify.auth_spotify(params[:code],params[:state]) %>
-			<% else %>
-				<% spotify.test_spotify_auth %> <!--Determines if Spotify auth requires a refresh token-->
-				<%= react_component('SpotifyUserContainer', spotify: spotify) %>
-				<%= react_component('SpotifyPlaylistsContainer', spotify: spotify) %>
+   		<% if spotify %>
+				<% if spotify.access_token.empty? %>
+					<% spotify.auth_spotify(params[:code],params[:state]) %>
+				<% else %>
+					<% spotify.test_spotify_auth %> <!--Determines if Spotify auth requires a refresh token-->
+					<%= react_component('SpotifyUserContainer', spotify: spotify) %>
+					<%= react_component('SpotifyPlaylistsContainer', spotify: spotify) %>
+				<% end %>
 			<% end %>
    </div>
    <div class="soundcloud_card">
     <% soundcloud = current_user.identities.where(provider: 'soundcloud').first%>
-		<% if !soundcloud.access_token.empty? %>
-   		<%= react_component('SoundcloudUserContainer', access_token: soundcloud.access_token) %>
-   		<%= react_component('SoundcloudPlaylistsContainer', access_token: soundcloud.access_token) %>
-   	<% else %>
-   		<h2> Not Connected to <span style="color:#f66b0f;">Soundcloud</span></h2>
-   	<% end %>
+    <% if soundcloud %>
+			<% if !soundcloud.access_token.empty? %>
+	   		<%= react_component('SoundcloudUserContainer', access_token: soundcloud.access_token) %>
+	   		<%= react_component('SoundcloudPlaylistsContainer', access_token: soundcloud.access_token) %>
+	   	<% else %>
+	   		<h2> Not Connected to <span style="color:#f66b0f;">Soundcloud</span></h2>
+	   	<% end %>
+	   <% end %>
    </div>
 </div>
 <div style="clear:both"></div>
