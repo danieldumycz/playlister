@@ -3,7 +3,7 @@
 Devise.setup do |config|
 
   #For omniauth provider configuration: provider: name, App_Key, App_Secret
-  config.omniauth :soundcloud, ENV['SOUNDCLOUD_CLIENT_ID'], ENV['SOUNDCLOUD_CLIENT_SECRET'], client_options: { redirect_uri: '/users/auth/soundcloud/callback' }
+  #config.omniauth :soundcloud, ENV['SOUNDCLOUD_CLIENT_ID'], ENV['SOUNDCLOUD_CLIENT_SECRET'], client_options: { redirect_uri: '/users/auth/soundcloud/callback' }
 
   config.omniauth :spotify, ENV['SPOTIFY_CLIENT_ID'], ENV['SPOTIFY_CLIENT_SECRET'], scope: 'playlist-read-private user-read-private user-read-email'
 
