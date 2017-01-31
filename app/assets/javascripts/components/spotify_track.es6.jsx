@@ -3,6 +3,8 @@ class SpotifyTrack extends React.Component {
     return (
     	<div className="small_card">
 	    		{this.props.track.name}
+	    		<div className="right_align">
+	    		</div>
 	   	</div>
     );
   }

@@ -45,8 +45,6 @@ class SpotifyTracksContainer extends React.Component {
   	if(this.state.data === null){
   		return <Loading />;
   	}
-    console.log(this.state.clicked);
-        console.log("NExt?:" + this.state.next);
 
   	return (
       <div>
