@@ -61,8 +61,7 @@ class SpotifySearchContainer extends React.Component {
 
   	return (
       <div>
-      {console.log(this.state.data.tracks)}
-  	  	<SpotifySearch tracks={this.state.data.tracks}/>
+  	  	<SpotifySearch title={this.props.title} tracks={this.state.data.tracks.items} search={true}/>
       </div>
 	  );
   }

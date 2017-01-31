@@ -43,7 +43,7 @@ class SoundcloudPlaylistsContainer extends React.Component {
   	return (
       <div>
         <div className="right_align">
-            {this.state.clicked ? <a onClick={this.onClick}>Hide</a> : <a onClick={this.onClick}>Load Soundcloud Data</a> }
+            {this.state.clicked ? <a onClick={this.onClick}></a> : <a onClick={this.onClick}>Load Soundcloud Data</a> }
             <br/>
         </div>
         <div>

@@ -19,9 +19,7 @@ class SoundcloudTrack extends React.Component {
     return (
     	<div className="small_card">
 	    		{this.props.track.title}
-	    		<div className="right_align">
-          	{this.state.clicked ? null : <div className="right-align" onClick={this.onClick}>Add</div>  }
-        	</div>
+          {this.state.clicked ? <div className="cursorPointer" onClick={this.onClick}>Hide Search</div> : <div className="cursorPointer" onClick={this.onClick}>Search</div>  }
 	        {this.state.clicked ? 
 	          <SpotifySearchContainer title={this.props.track.title} />
 	           : null

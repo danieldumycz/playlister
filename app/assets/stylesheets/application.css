@@ -186,6 +186,18 @@ hr {
   margin-bottom: 2rem;
 }
 
+.left_align {
+  clear:both;
+  float:left;
+  cursor:pointer;
+  margin-bottom: 2rem;
+}
+
+.cursorPointer {
+  cursor:pointer;
+  color:blue;
+}
+
 .center_align img{
   clear:both;
   text-align:center;

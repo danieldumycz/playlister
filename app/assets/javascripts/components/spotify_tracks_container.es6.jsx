@@ -15,10 +15,8 @@ class SpotifyTracksContainer extends React.Component {
 
  	loadData(){
     if(this.props.next){
-      console.log("Next");
       var uri = this.props.next;
     } else {
-      console.log("Original");
  		  var uri = "https://api.spotify.com/v1/users/" + this.props.uid + "/playlists/" + this.props.playlist.id + "/tracks";
     }
  		$.ajax({
@@ -52,10 +50,15 @@ class SpotifyTracksContainer extends React.Component {
   		return <Loading />;
   	}
 
+    let button = null;
+    if (this.state.next) {
+      button = (this.state.clicked? <a className="right_align" onClick={this.onClick}>Hide</a> : <a className="right_align" onClick={this.onClick}>More...</a>)
+    }
+
   	return (
       <div>
         <SpotifyTracks tracks={this.state.data.items} access_token={this.props.access_token} next={this.state.next} />
-        {this.state.next? <a className="right_align" onClick={this.onClick}>More/Hide</a> : null }
+        {button}
         {this.state.clicked? 
           <SpotifyTracksContainer uid={this.props.playlist.owner.id} next={this.state.next} playlist={this.props.playlist} access_token={this.props.access_token} />
            : null
