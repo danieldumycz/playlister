@@ -1,10 +1,12 @@
 class SoundcloudController < ApplicationController
 	require 'soundcloud'
+	before_action :authenticate_user!
+	before_action :set_soundcloud
 
   def connect
   	# create client object with app credentials
-		client = Soundcloud.new(:client_id => ENV["SOUNDCLOUD_CLIENT_ID"],
-		                        :client_secret => ENV["SOUNDCLOUD_CLIENT_SECRET"],
+		client = Soundcloud.new(:client_id => current_user.client_id,
+		                    		:client_secret => current_user.client_secret,
 		                        :redirect_uri => "http://localhost:3000/soundcloud/oauth-callback",
 		                        :response_type => 'code')
 		# redirect user to authorize URL
@@ -13,8 +15,8 @@ class SoundcloudController < ApplicationController
 
 	def connected
 		# create client object with app credentials
-		client = Soundcloud.new(:client_id => ENV["SOUNDCLOUD_CLIENT_ID"],
-		                    :client_secret => ENV["SOUNDCLOUD_CLIENT_SECRET"],
+		client = Soundcloud.new(:client_id => current_user.client_id,
+		                    :client_secret => current_user.client_secret,
 		                    :redirect_uri => "http://localhost:3000/soundcloud/oauth-callback")
 		# exchange authorization code for access token
 		access_token = client.exchange_token(:code => params[:code])
@@ -31,8 +33,8 @@ class SoundcloudController < ApplicationController
 
 	def refresh
 		# create client object with app credentials and refresh token
-		client = Soundcloud.new(:client_id => ENV["SOUNDCLOUD_CLIENT_ID"],
-		                        :client_secret => ENV["SOUNDCLOUD_CLIENT_SECRET"],
+		client = Soundcloud.new(:client_id => current_user.client_id,
+		                    		:client_secret => current_user.client_secret,
 		                        :refresh_token => 'SOME_REFRESH_TOKEN')
 
 		# the client can now be used to make authenticated API calls
@@ -41,5 +43,9 @@ class SoundcloudController < ApplicationController
 
 	def set_user
 		user = current_user
+	end
+
+	def set_soundcloud
+		soundcloud = current_user.identities.where(provider:'soundcloud').first
 	end
 end
