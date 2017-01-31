@@ -7,21 +7,25 @@
 </div>
 
 <dl class="dl-horizontal">
+	<% @user.identities.each do |identity| %>
 		<table class="table">
 		  <thead>
 		    <tr>
-		      <th>Identities</th>
-		      <th>User ID</th>
+		      <th>Identity: <%=identity.provider%></th>
+		      <th>Options: </th>
 		    </tr>
 		  </thead>
 		  <tbody>
-		    <% @user.identities.each do |identity| %>
 		    <tr>
-		      <th scope="row"><%= identity.provider %></th>
-		      <td><%= identity.uid %></td>
-		      <td><%= identity.access_token %></td>
+		      <th><%= identity.client_id %></th>
 		    </tr>
-		    <% end %>
+		    <tr>
+		      <th><%= identity.client_secret %></th>
+		    </tr>
+		    <tr>
+		      <th><%= identity.access_token %></th>
+		    </tr>
 		  </tbody>
 		</table>
+	<% end %>
 </dl>

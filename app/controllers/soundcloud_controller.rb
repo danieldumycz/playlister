@@ -38,4 +38,8 @@ class SoundcloudController < ApplicationController
 		# the client can now be used to make authenticated API calls
 		puts client.get('/me').username
 	end
+
+	def set_user
+		user = current_user
+	end
 end
