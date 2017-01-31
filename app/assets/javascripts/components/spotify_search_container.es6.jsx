@@ -30,7 +30,6 @@ class SpotifySearchContainer extends React.Component {
 	}
 
  	loadData(){
- 		console.log(this.state.track_name);
  		var uri = "https://api.spotify.com/v1/search?q=" + this.state.track_name + "&type=track";
  		$.ajax({
       url: uri,
@@ -39,6 +38,7 @@ class SpotifySearchContainer extends React.Component {
         this.setState({ 
         	data: data
       	});
+      	console.log(this.state.data);
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -61,7 +61,8 @@ class SpotifySearchContainer extends React.Component {
 
   	return (
       <div>
-  	  	<SpotifySearch tracks={this.state.data.items}/>
+      {console.log(this.state.data.tracks)}
+  	  	<SpotifySearch tracks={this.state.data.tracks}/>
       </div>
 	  );
   }

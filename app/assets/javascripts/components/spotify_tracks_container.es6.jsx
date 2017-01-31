@@ -10,11 +10,17 @@ class SpotifyTracksContainer extends React.Component {
   }
 
 	componentDidMount() {
-	    this.loadPlaylistData();
+	    this.loadData();
 	}
 
- 	loadPlaylistData(){
- 		var uri = "https://api.spotify.com/v1/users/" + this.props.uid + "/playlists/" + this.props.playlist.id + "/tracks";
+ 	loadData(){
+    if(this.props.next){
+      console.log("Next");
+      var uri = this.props.next;
+    } else {
+      console.log("Original");
+ 		  var uri = "https://api.spotify.com/v1/users/" + this.props.uid + "/playlists/" + this.props.playlist.id + "/tracks";
+    }
  		$.ajax({
       url: uri,
       dataType: 'json',
@@ -48,12 +54,10 @@ class SpotifyTracksContainer extends React.Component {
 
   	return (
       <div>
-  	  	<SpotifyTracks tracks={this.state.data.items} access_token={this.props.access_token} next={this.state.next} />
-        <div className="right_align">
-          {this.props.next ? <a onClick={this.onClick}>More+</a> : null }
-        </div>
-        {this.state.clicked  == true ? 
-          <SpotifyMoreTracksContainer access_token={this.props.access_token} next={this.props.next} />
+        <SpotifyTracks tracks={this.state.data.items} access_token={this.props.access_token} next={this.state.next} />
+        {this.state.next? <a className="right_align" onClick={this.onClick}>More/Hide</a> : null }
+        {this.state.clicked? 
+          <SpotifyTracksContainer uid={this.props.playlist.owner.id} next={this.state.next} playlist={this.props.playlist} access_token={this.props.access_token} />
            : null
         }
       </div>
