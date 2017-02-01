@@ -28,7 +28,7 @@ class SoundcloudTrack extends React.Component {
 	    		{this.props.track.title} <sub className="right_align">{user}</sub>
           {this.state.clicked ? <div className="cursorPointer" onClick={this.onClick}>Hide Search</div> : <div className="cursorPointer" onClick={this.onClick}>Search</div>  }
 	        {this.state.clicked ? 
-	          <SpotifySearchContainer title={this.props.track.title} />
+	          <SpotifySearchContainer spotify_token={this.props.spotify_token} title={this.props.track.title} />
 	           : null
 	        }
 	   	</div>

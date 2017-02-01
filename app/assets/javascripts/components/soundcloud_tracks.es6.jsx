@@ -3,7 +3,7 @@ class SoundcloudTracks extends React.Component {
     return (
     	<div>
 	    	{this.props.tracks.map(track =>
-					<SoundcloudTrack track={track} key={track.id} />
+					<SoundcloudTrack spotify_token={this.props.spotify_token} track={track} key={track.id} />
 				)}
 	    </div>
     );

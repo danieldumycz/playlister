@@ -47,7 +47,7 @@ class SoundcloudPlaylistsContainer extends React.Component {
             <br/>
         </div>
         <div>
-          {this.state.clicked ? <SoundcloudPlaylists access_token={this.props.access_token} playlists={this.state.data} />
+          {this.state.clicked ? <SoundcloudPlaylists spotify_token={this.props.spotify_token} access_token={this.props.access_token} playlists={this.state.data} />
           : null }
     	  </div>
       </div>

@@ -14,7 +14,6 @@
 </div>
 <div style="width: 100%;">
    <div class="spotify_card">
-   		<%# spotify = current_user.identities.where(provider: 'spotify').first%>
    		<% if @spotify %>
 				<% if @spotify.access_token.empty? %>
 					<% @spotify.auth_spotify(params[:code],params[:state]) %>
@@ -32,7 +31,7 @@
     <% if @soundcloud %>
 			<% if !@soundcloud.access_token.empty? %>
 	   		<%= react_component('SoundcloudUserContainer', access_token: @soundcloud.access_token) %>
-	   		<%= react_component('SoundcloudPlaylistsContainer', access_token: @soundcloud.access_token) %>
+	   		<%= react_component('SoundcloudPlaylistsContainer', access_token: @soundcloud.access_token, spotify_token: @spotify.access_token) %>
 	   	<% end %>
 	 	<% else %>
 	 		<h2> Not Connected to <span style="color:#f66b0f;">Soundcloud</span></h2>

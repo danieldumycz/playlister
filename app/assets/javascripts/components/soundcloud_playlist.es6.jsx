@@ -28,7 +28,7 @@ class SoundcloudPlaylist extends React.Component {
 	    	</ul>
         <hr></hr>
         {this.state.clicked ? 
-            <SoundcloudTracks access_token={this.props.access_token} tracks={this.props.playlist.tracks} />
+            <SoundcloudTracks spotify_token={this.props.spotify_token} access_token={this.props.access_token} tracks={this.props.playlist.tracks} />
             : null
           }
         <br/>
