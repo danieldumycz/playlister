@@ -3,7 +3,10 @@
 	  <li><h1>PL4YLISTR</h1></li>
 	  <hr>
 	  <li>
-	  	<%= link_to "Connect with Spotify", "https://accounts.spotify.com/authorize/?client_id=#{@spotify.client_id}&response_type=code&scope=#{@scope}&redirect_uri=#{ENV['SPOTIFY_REDIRECT_URI']}", class: "button"%>
+	  	<% @scope = "playlist-modify-public playlist-modify-private user-read-private streaming user-read-email" %>
+	  	<% @scope = ERB::Util.url_encode(@scope) %>
+	  	<%= @redirect_uri = "http://localhost:3000/callback" %>
+	  	<%= link_to "Connect with Spotify", "https://accounts.spotify.com/authorize/?client_id=#{@spotify.client_id}&response_type=code&scope=#{@scope}&redirect_uri=#{@redirect_uri}", class: "button"%>
 	  </li>
 	  <li>
 	    <%= link_to "Connect with Soundcloud", soundcloud_connect_path, class: "button"%>
@@ -15,8 +18,8 @@
 <div style="width: 100%;">
    <div class="spotify_card">
    		<% if @spotify %>
-				<% if @spotify.access_token.empty? %>
-					<% @spotify.auth_spotify(params[:code],params[:state]) %>
+				<% if !@spotify.access_token %>
+					<% @spotify.auth_spotify(params[:code],params[:state],@redirect_uri) %>
 				<% else %>
 					<% @spotify.test_spotify_auth %> <!--Determines if Spotify auth requires a refresh token-->
 					<%= react_component('SpotifyUserContainer', spotify: @spotify) %>
@@ -29,7 +32,7 @@
    <div class="soundcloud_card">
     <%# soundcloud = current_user.identities.where(provider: 'soundcloud').first%>
     <% if @soundcloud %>
-			<% if !@soundcloud.access_token.empty? %>
+			<% if @soundcloud.access_token %>
 	   		<%= react_component('SoundcloudUserContainer', access_token: @soundcloud.access_token) %>
 	   		<%= react_component('SoundcloudPlaylistsContainer', access_token: @soundcloud.access_token, spotify: @spotify) %>
 	   	<% end %>
@@ -42,4 +45,3 @@
 <footer class="footer">
         <p></p>
 </footer>
-

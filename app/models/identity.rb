@@ -14,8 +14,8 @@ class Identity < ActiveRecord::Base
   	identity.save!
   end
 
-  def auth_spotify(code, state)
-    redirect_uri = "http://localhost:8888/callback"
+  def auth_spotify(code, state, uri)
+    redirect_uri = uri
     encoded_client_id_secret = Base64.strict_encode64("#{client_id}:#{client_secret}")
     result = HTTParty.post(
         "https://accounts.spotify.com/api/token",
@@ -24,6 +24,7 @@ class Identity < ActiveRecord::Base
                   :redirect_uri => "#{redirect_uri}"},
         :headers => {"Authorization" => "Basic #{encoded_client_id_secret}"}
         )
+    puts result
     if result.code == 200
       self.access_token = result['access_token']
       self.refresh_token = result['refresh_token']
