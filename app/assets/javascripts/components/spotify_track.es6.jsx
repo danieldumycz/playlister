@@ -1,4 +1,19 @@
 class SpotifyTrack extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      clicked: false
+    }
+    this.onClick = this.onClick.bind(this);
+  }
+  onClick() {
+    if(this.state.clicked){
+      this.setState({ clicked : false});
+    } else {
+      this.setState({ clicked : true});
+    }
+  }
+
   render () {
   	let track = null;
   	if(this.props.track.artists.length > 1){
@@ -8,7 +23,11 @@ class SpotifyTrack extends React.Component {
   	}
     return (
     	<div className="small_card">
-    		{track}{this.props.search?(<a className="right_align">Add</a>):null}
+    		{track}{this.props.search?(<a onClick={this.onClick} className="right_align">Add</a>):null}
+        {this.state.clicked? 
+          <SpotifyAddPlaylistContainer  spotify={this.props.spotify} track={this.props.track.id} />
+           : null
+        }
 	   	</div>
     );
   }

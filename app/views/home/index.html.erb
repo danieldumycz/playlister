@@ -31,7 +31,7 @@
     <% if @soundcloud %>
 			<% if !@soundcloud.access_token.empty? %>
 	   		<%= react_component('SoundcloudUserContainer', access_token: @soundcloud.access_token) %>
-	   		<%= react_component('SoundcloudPlaylistsContainer', access_token: @soundcloud.access_token, spotify_token: @spotify.access_token) %>
+	   		<%= react_component('SoundcloudPlaylistsContainer', access_token: @soundcloud.access_token, spotify: @spotify) %>
 	   	<% end %>
 	 	<% else %>
 	 		<h2> Not Connected to <span style="color:#f66b0f;">Soundcloud</span></h2>

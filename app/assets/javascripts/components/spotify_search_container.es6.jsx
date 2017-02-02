@@ -38,7 +38,6 @@ class SpotifySearchContainer extends React.Component {
         this.setState({ 
         	data: data
       	});
-      	console.log(this.state.data);
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -58,10 +57,9 @@ class SpotifySearchContainer extends React.Component {
   	if(this.state.data === null){
   		return <Loading />;
   	}
-
   	return (
       <div>
-  	  	<SpotifySearch title={this.props.title} tracks={this.state.data.tracks.items} search={true}/>
+  	  	<SpotifySearch  spotify={this.props.spotify} title={this.props.title} tracks={this.state.data.tracks.items} search={true}/>
       </div>
 	  );
   }

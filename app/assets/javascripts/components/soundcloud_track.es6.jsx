@@ -30,7 +30,7 @@ class SoundcloudTrack extends React.Component {
             :<div className="small-button" onClick={this.onClick}> Search </div> }
 	         &nbsp;{this.props.track.title}
           {this.state.clicked ? 
-	          <SpotifySearchContainer spotify_token={this.props.spotify_token} title={this.props.track.title} />
+	          <SpotifySearchContainer spotify={this.props.spotify} title={this.props.track.title} />
 	           :null
 	        }
 	   	</div>
