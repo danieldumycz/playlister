@@ -32,7 +32,7 @@ class SpotifyTracksContainer extends React.Component {
         });
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
+        console.error(xhr, status, err.toString());
       }.bind(this)
     });
  	}
